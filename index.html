@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awesome script -->
+	<script src="https://kit.fontawesome.com/a4c18554aa.js" crossorigin="anonymous"></script>
     <title>Geography Quiz</title>
 </head>
 <body>
-    <h1>Geography for kids</h1>
+    <!-- Start of Header Section-->
+    <header>
+        <h1>Geography for kids</h1>
+        <h2>Interactive and fun quiz</h2>
+    </header>
+    <!-- End Header Section-->
+
+    <div class="welcome-area">
+        <h3>Please enter a username to start playing!</h3>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <span role="alert" id="usernameError" aria-hidden="true"></span>
+            <button type="submit" id="submit" class="btn">Submit</button>
+        </form>
+        <h3>Rules and guidelines:</h3>
+        <ul id="quiz-instructions">
+            <li>To start playing the quiz, enter a username in the form and click 'Submit'.</li>
+            <li>Challenge yourself by selecting one of the four difficulty levels.</li>
+            <li>The quiz consists of 10 Multiple choice questions</li>
+            <li>Answer each question by clicking on your chosen answer.</li>
+            <li>At the end of the quiz, you can view your total score.</li>
+            <li>You can choose to play again.</li>
+        </ul>
+    </div>
+
+    <!-- Start Footer Section-->
+    <footer>
+        <a href="https://github.com/deeksha-varma" target="_blank" rel="noopener" aria-label="Github page of developer (opens in new tab).">
+            <i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/deeksha-varma-74aa18105/" target="_blank" rel="noopener" aria-label="LinkedIn page of developer (opens in new tab).">
+            <i class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+    <!-- End Footer Section-->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
