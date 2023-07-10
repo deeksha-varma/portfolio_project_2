@@ -57,6 +57,29 @@ form .btn {
     cursor: pointer;
 }
 
+/* username form validation styles */
+
+#usernameError {
+    padding: 0.3rem;
+    display: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: red;
+    text-align: center;
+}
+
+#usernameError.visible {
+    display: block;
+}
+
+/* code referenced from https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation */
+/* This is our style for the invalid fields */
+
+input.invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+
 #quiz-instructions {
     list-style-type: square;
     font-size: 1.2rem;
