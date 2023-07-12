@@ -1,5 +1,10 @@
-// Code for form validation referenced from https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+/** On page load hide the welcome user section */
 
+window.addEventListener("load", (event) => {
+    document.getElementsByClassName("welcome-area")[0].style.display = "none";
+});
+
+// Code for form validation referenced from https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
 const submit = document.getElementById("submit");
 
 submit.addEventListener("click", validate);
@@ -17,4 +22,14 @@ function validate(e) {
         nameError.setAttribute("aria-invalid", true);
         nameError.innerText = "Please fill in a username to proceed!"
     }
+
+    if (userNameField.value) {
+        document.getElementsByClassName("welcome-area")[0].style.display = "initial";
+        document.getElementsByClassName("form-area")[0].style.display = "none";
+        window.localStorage.setItem("username", userNameField.value);
+    }
 }
+
+let user = window.localStorage.getItem("username");
+console.log(user);
+document.getElementById("welcome-text").innerText = `Welcome to the Quiz ${user}!`;
