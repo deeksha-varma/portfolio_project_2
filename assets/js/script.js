@@ -44,10 +44,13 @@ function questionChoice(selectedLevel) {
     let userChoice = selectedLevel.textContent;
     if (userChoice === 'Easy') {
         allQuestions = allQuestionsEasy;
+        console.log(allQuestions);
     } else if (userChoice === 'Medium') {
         allQuestions = allQuestionsMedium;
+        console.log(allQuestions);
     } else if (userChoice === 'Hard') {
         allQuestions = allQuestionsHard;
+        console.log(allQuestions);
     } else {
         alert('You have not made a choice!')
     };
