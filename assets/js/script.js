@@ -24,12 +24,33 @@ function validate(e) {
     }
 
     if (userNameField.value) {
+        console.log(userNameField.value)
+        window.localStorage.setItem("username", userNameField.value);
         document.getElementsByClassName("welcome-area")[0].style.display = "initial";
         document.getElementsByClassName("form-area")[0].style.display = "none";
-        window.localStorage.setItem("username", userNameField.value);
+        let user = window.localStorage.getItem("username");
+        document.getElementById("welcome-text").innerText = `Welcome to the Quiz, ${user}!`;
     }
 }
 
-let user = window.localStorage.getItem("username");
-console.log(user);
-document.getElementById("welcome-text").innerText = `Welcome to the Quiz ${user}!`;
+var allQuestions;
+
+/**
+ * Loads the set of questions based on the level of difficulty
+ * chosen by the user
+ * @param {string} selectedLevel
+ */
+function questionChoice(selectedLevel) {
+    let userChoice = selectedLevel.textContent;
+    if (userChoice === 'Easy') {
+        allQuestions = allQuestionsEasy;
+    } else if (userChoice === 'Medium') {
+        allQuestions = allQuestionsMedium;
+    } else if (userChoice === 'Hard') {
+        allQuestions = allQuestionsHard;
+    } else {
+        alert('You have not made a choice!')
+    };
+
+    document.getElementsByClassName("welcome-area")[0].style.display = "none";
+}
