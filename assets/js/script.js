@@ -1,7 +1,7 @@
-/** On page load hide the welcome user section */
-
+/** On page load hide the welcome user section and quiz area */
 window.addEventListener("load", (event) => {
     document.getElementsByClassName("welcome-area")[0].style.display = "none";
+    document.getElementsByClassName("quiz-area")[0].style.display = "none";
 });
 
 // Code for form validation referenced from https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
@@ -34,6 +34,17 @@ function validate(e) {
 }
 
 var allQuestions;
+var current = 0;
+
+function createQuestion() {
+
+    // loop through the array of questions
+    // for each question make some HTML
+    let question = document.getElementById('question-block');
+    question.innerHTML = allQuestions[this.current].q;
+    // increment score
+    // create radio button options
+}
 
 /**
  * Loads the set of questions based on the level of difficulty
@@ -44,16 +55,16 @@ function questionChoice(selectedLevel) {
     let userChoice = selectedLevel.textContent;
     if (userChoice === 'Easy') {
         allQuestions = allQuestionsEasy;
-        console.log(allQuestions);
     } else if (userChoice === 'Medium') {
         allQuestions = allQuestionsMedium;
-        console.log(allQuestions);
     } else if (userChoice === 'Hard') {
         allQuestions = allQuestionsHard;
-        console.log(allQuestions);
     } else {
         alert('You have not made a choice!')
     };
 
-    document.getElementsByClassName("welcome-area")[0].style.display = "none";
+    // Start Quiz
+    createQuestion();
+    document.getElementsByClassName("quiz-area")[0].style.display = "initial"; //displays the quiz section
+    document.getElementsByClassName("welcome-area")[0].style.display = "none"; //hides welcome user section
 }
