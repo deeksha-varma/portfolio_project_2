@@ -76,10 +76,10 @@ next.addEventListener("click", () => {
     if (answer) {
         if (answer == allQuestions[this.current].correct) {
             score++;
-            // incrementScore();
+            incrementScore();
         } else {
             console.log("wrong answer");
-            // incrementWrongAnswer();
+            incrementWrongAnswer();
         }
         this.current++;
         if (this.current < allQuestions.length){
@@ -90,6 +90,22 @@ next.addEventListener("click", () => {
         }
     }
 });
+
+/**
+ * This function increments the correct score.
+ */
+function incrementScore() {
+    let oldscore = parseInt(document.getElementById("correct-counter").innerText);
+    document.getElementById("correct-counter").innerText = ++oldscore;
+}
+
+/**
+ * This function increments the wrong answer counter
+ */
+function incrementWrongAnswer() {
+    let oldscore = parseInt(document.getElementById("wrong-counter").innerText);
+    document.getElementById("wrong-counter").innerText = ++oldscore;
+}
 
 /**
  * Loads the set of questions based on the level of difficulty
