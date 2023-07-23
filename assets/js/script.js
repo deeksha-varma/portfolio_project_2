@@ -35,15 +35,29 @@ function validate(e) {
 
 var allQuestions;
 var current = 0;
+let score = 0;
 
 function createQuestion() {
 
-    // loop through the array of questions
-    // for each question make some HTML
-    let question = document.getElementById('question-block');
-    question.innerHTML = allQuestions[this.current].q;
-    // increment score
-    // create radio button options
+    // deselect answers
+    for (let i = 0; i < allQuestions[this.current].answers.length; i++) {
+        document.forms.radioAnswers.elements.choice[i].checked = false;
+    }
+        // make some HTML to display each question
+        let question = document.getElementById('question-block');
+        question.innerHTML = allQuestions[this.current].q;
+        // increment score
+        // create radio button options
+        createChoices();
+}
+
+function createChoices() {
+    // loop through the radio button options
+    for (let i = 0; i < allQuestions[this.current].answers.length; i++){
+        let option = document.getElementById("label"+i);
+        // append answer text to each radio button label element
+        option.innerHTML = allQuestions[this.current].answers[i];
+    }
 }
 
 /**
@@ -67,4 +81,6 @@ function questionChoice(selectedLevel) {
     createQuestion();
     document.getElementsByClassName("quiz-area")[0].style.display = "initial"; //displays the quiz section
     document.getElementsByClassName("welcome-area")[0].style.display = "none"; //hides welcome user section
+    localStorage.setItem("userLevel", userChoice);
+    return allQuestions;
 }
