@@ -138,6 +138,30 @@ input.invalid {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
 }
 
+/* Quiz area styling */
+
+.quiz-area {
+    width: 60%;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#question-block {
+    margin: 2rem;
+}
+
+#quiz-choice {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    row-gap: 40px;
+}
+
 /* Footer */
 
 footer {
