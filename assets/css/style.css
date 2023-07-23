@@ -198,6 +198,32 @@ input.invalid {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
 }
 
+/* Score Area Styling */
+
+.score-area {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.correct {
+    color: rgb(7, 136, 7);
+}
+
+.wrong {
+    color: rgb(246, 0, 0);
+}
+
+#correct-counter {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#wrong-counter {
+    margin-left: 2rem;
+}
+
+
 /* Footer */
 
 footer {
