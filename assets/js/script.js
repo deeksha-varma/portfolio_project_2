@@ -36,6 +36,7 @@ function validate(e) {
 var allQuestions;
 var current = 0;
 let score = 0;
+const quiz = document.getElementsByClassName("quiz-container")[0];
 
 function createQuestion() {
 
@@ -59,6 +60,36 @@ function createChoices() {
         option.innerHTML = allQuestions[this.current].answers[i];
     }
 }
+
+function getSelectedChoice() {
+    for (let i = 0; i < allQuestions[this.current].answers.length; i++){
+        if (document.forms.radioAnswers.elements.choice[i].checked == true){
+            let userAnswer = document.forms.radioAnswers.elements.choice[i].value;
+            return userAnswer;
+        }
+    }
+}
+
+const next = document.getElementById("next");
+next.addEventListener("click", () => {
+    const answer = getSelectedChoice();
+    if (answer) {
+        if (answer == allQuestions[this.current].correct) {
+            score++;
+            // incrementScore();
+        } else {
+            console.log("wrong answer");
+            // incrementWrongAnswer();
+        }
+        this.current++;
+        if (this.current < allQuestions.length){
+            createQuestion();
+        }
+        else {
+            quiz.innerHTML = `<h2>Quiz ends. You answered ${score}/${allQuestions.length} questions correctly</h2>`;
+        }
+    }
+});
 
 /**
  * Loads the set of questions based on the level of difficulty
