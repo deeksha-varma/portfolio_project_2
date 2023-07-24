@@ -36,7 +36,6 @@ function validate(e) {
 var allQuestions;
 var current = 0;
 let score = 0;
-const quiz = document.getElementsByClassName("quiz-container")[0];
 const progressText = document.querySelector("#progressText");
 const progressBarFull = document.querySelector("#progressBarFull");
 let questionCounter = 0;
@@ -94,7 +93,7 @@ next.addEventListener("click", () => {
             createQuestion();
         }
         else {
-            quiz.innerHTML = `<h2>Quiz ends. You answered ${score}/${allQuestions.length} questions correctly</h2>`;
+            window.location.assign('end_quiz.html');
         }
     }
 });
