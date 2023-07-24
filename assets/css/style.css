@@ -151,6 +151,32 @@ input.invalid {
     justify-content: center;
 }
 
+#question-counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prefix {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 1.3rem;
+    border: 0.2rem solid rgb(11, 223, 36);
+    margin-top: 1rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background:rgb(11, 223, 36);
+    width: 0%;
+}
+
 #question-block {
     margin: 2rem;
 }
@@ -207,7 +233,7 @@ input.invalid {
 }
 
 .correct {
-    color: rgb(7, 136, 7);
+    color: rgb(11, 223, 36);
 }
 
 .wrong {
@@ -222,7 +248,6 @@ input.invalid {
 #wrong-counter {
     margin-left: 2rem;
 }
-
 
 /* Footer */
 

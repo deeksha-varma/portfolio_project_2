@@ -52,14 +52,27 @@
     <!-- Start of Quiz Section -->
     <section class="quiz-area" aria-labelledby="quiz-questions">
         <div class="quiz-container">
+            <!-- Question Counter & Progress Bar -->
+            <div id="question-counter">
+                <p id="progressText" class="prefix">
+                    Question
+                </p>
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+            </div>
+            <!-- Question -->
             <h3 id="question-block"></h3>
+            <!-- Radio button choices -->
             <form id="quiz-choice" name="radioAnswers">
                 <input type="radio" name="choice" value="0"><label id="label0"></label></input>
                 <input type="radio" name="choice" value="1"><label id="label1"></label></input>
                 <input type="radio" name="choice" value="2"><label id="label2"></label></input>
                 <input type="radio" name="choice" value="3"><label id="label3"></label></input>
             </form>
+            <!-- Next Question -->
             <input type="button" value="next" id="next"></input>
+            <!-- Scoring Area -->
             <div class="score-area">
                 <span class="correct"><i class="fa-solid fa-check"></i> : <span id="correct-counter">0</span></span>
                 <span class="wrong"><i class="fa-solid fa-x"></i> : <span id="wrong-counter">0</span></span>

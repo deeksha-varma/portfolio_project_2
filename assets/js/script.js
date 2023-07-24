@@ -37,6 +37,9 @@ var allQuestions;
 var current = 0;
 let score = 0;
 const quiz = document.getElementsByClassName("quiz-container")[0];
+const progressText = document.querySelector("#progressText");
+const progressBarFull = document.querySelector("#progressBarFull");
+let questionCounter = 0;
 
 function createQuestion() {
 
@@ -44,12 +47,18 @@ function createQuestion() {
     for (let i = 0; i < allQuestions[this.current].answers.length; i++) {
         document.forms.radioAnswers.elements.choice[i].checked = false;
     }
-        // make some HTML to display each question
-        let question = document.getElementById('question-block');
-        question.innerHTML = allQuestions[this.current].q;
-        // increment score
-        // create radio button options
-        createChoices();
+
+    // make some HTML to display each question
+    let question = document.getElementById('question-block');
+    question.innerHTML = allQuestions[this.current].q;
+
+    // incrementing question counter and progress bar styling
+    questionCounter++;
+    progressText.innerText = `Question ${questionCounter} of ${allQuestions.length}`
+    progressBarFull.style.width = `${(questionCounter/allQuestions.length) * 100}%`
+
+    // create radio button options
+    createChoices();
 }
 
 function createChoices() {
@@ -78,7 +87,6 @@ next.addEventListener("click", () => {
             score++;
             incrementScore();
         } else {
-            console.log("wrong answer");
             incrementWrongAnswer();
         }
         this.current++;
@@ -91,7 +99,7 @@ next.addEventListener("click", () => {
     }
 });
 
-/**
+/** Code for score tracking referenced from Love Maths Project
  * This function increments the correct score.
  */
 function incrementScore() {
