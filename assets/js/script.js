@@ -93,6 +93,7 @@ next.addEventListener("click", () => {
             createQuestion();
         }
         else {
+            localStorage.setItem("totalScore", score);
             window.location.assign('end_quiz.html');
         }
     }
