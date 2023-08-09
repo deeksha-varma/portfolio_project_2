@@ -81,6 +81,34 @@ function loadQuestion() {
     questionCounter++;
 }
 
+/**
+ * This function generates random answers for each question.
+ * Uses answers array of the currentQuestion to loop through and pushed
+ * into the availableOptions array. A randomOptionIndex is generated using Math.random
+ * and the position of this index is obtained from availableOptionsArray and removed using splice()
+ * method so that the option is not repeated.
+ */
+function createChoices() {
+    // get the length of options
+    const optionLength = currentQuestion.answers.length;
+    // push options into availableOptions array
+    for (let i = 0; i < optionLength; i++) {
+        availableOptions.push(i);
+    };
+    // create options
+    for (let i = 0; i < optionLength; i++) {
+        let randomOptionIndex = availableOptions[Math.floor(Math.random() * availableOptions.length)];
+        const optionIndex = availableOptions.indexOf(randomOptionIndex);
+        availableOptions.splice(optionIndex, 1);
+        let label = document.getElementById("label"+i);
+        // append answer text to each radio button label element
+        label.innerHTML = currentQuestion.answers[randomOptionIndex];
+        let input = document.getElementById("option"+i);
+        input.value = randomOptionIndex;
+        input.setAttribute("onclick", "getSelectedChoice(this)");
+    }
+}
+
 function getSelectedChoice(element) {
     const value = parseInt(element.value);
     if (value === currentQuestion.correct) {
@@ -101,6 +129,7 @@ next.addEventListener("click", () => {
         window.location.assign('end_quiz.html');
     } else {
         createQuestion();
+        createChoices();
     }
 });
 
@@ -140,6 +169,7 @@ function questionChoice(selectedLevel) {
     // Start Quiz
     setAvailableQuestions();
     createQuestion();
+    createChoices();
     document.getElementsByClassName("quiz-area")[0].style.display = "initial"; //displays the quiz section
     document.getElementsByClassName("welcome-area")[0].style.display = "none"; //hides welcome user section
     localStorage.setItem("userLevel", userChoice);
