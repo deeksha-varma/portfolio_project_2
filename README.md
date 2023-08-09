@@ -304,15 +304,23 @@ The method from cloning a project from GitHub is below:
 ### Content
 * The font came from [Google Fonts](https://fonts.google.com/).
 * The icons came from [Font Awesome](https://fontawesome.com/).
+* Favicon taken from [FreeFavicon](https://www.freefavicon.com/freefavicons/network/iconinfo/earth-152-3320.html).
 * The markdown syntax used to write README doc were referenced from [Git Hub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Media
-* Background image by ... on ....
+* Background image <a href="https://www.freepik.com/free-vector/classroom-chalkboard-banner_4805837.htm#page=6&query=geography%20quiz%20for%20kids%20background%20chalkboard&position=1&from_view=search&track=ais">brgfx</a> on Freepik.
+* Quiz End page Image by <a href="https://www.freepik.com/free-vector/people-celebrating-goal-achievement-holding-trophy_12286435.htm#query=victory&position=26&from_view=search&track=sph">Freepik</a>
 * 404 page ...
 
 ### Code
 
 * The functionality for keeping track of the score was inspired by the Love Maths project.
+* Form validation for username field was implemented using this [FreeCodeCamp](https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) resource.
+* Username Submit button styling inspired from [CSS Submit Buttons](https://codepen.io/sumeet1610/pen/abJeZXq).
+* The CSS styles for 'choose level' section was taken from [CSS Button Examples](https://getcssscan.com/css-buttons-examples).
+* [This](https://www.youtube.com/watch?v=ZGpi1iZ1oZo&t=482s) video was referred to for the radio button quiz layout.
+* Progress bar layout was implemented using [this](https://www.youtube.com/watch?v=f4fB9Xg2JEY) video by [Brian Design](https://www.youtube.com/@briandesign).
+* The disabled radio button functionality was implemented by referring to [this](https://stackoverflow.com/questions/62301953/how-to-disable-other-opitons-when-one-option-is-selected-of-radio-buttons) Stackoverflow question.
 
 ## Acknowledgements
 The site was developed as a part of a Full Stack Software Development Diploma Course at the [Code Institute](https://codeinstitute.net/) and is my second Portfolio Project.
