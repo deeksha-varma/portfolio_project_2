@@ -39,63 +39,68 @@ let score = 0;
 const progressText = document.querySelector("#progressText");
 const progressBarFull = document.querySelector("#progressBarFull");
 let questionCounter = 0;
+let availableQuestions = [];
+let availableOptions = [];
+let currentQuestion;
+
+// push the questions into availableQuestions array
+function setAvailableQuestions() {
+    const totalQuestions = allQuestions.length;
+    for(let i = 0; i < totalQuestions; i++) {
+        availableQuestions.push(allQuestions[i]);
+    }
+}
 
 function createQuestion() {
-
     // deselect answers
     for (let i = 0; i < allQuestions[this.current].answers.length; i++) {
         document.forms.radioAnswers.elements.choice[i].checked = false;
     }
-
-    // make some HTML to display each question
-    let question = document.getElementById('question-block');
-    question.innerHTML = allQuestions[this.current].q;
-
-    // incrementing question counter and progress bar styling
-    questionCounter++;
+    // generate a random question
+    loadQuestion();
+    // progress bar styling
     progressText.innerText = `Question ${questionCounter} of ${allQuestions.length}`
     progressBarFull.style.width = `${(questionCounter/allQuestions.length) * 100}%`
-
-    // create radio button options
-    createChoices();
 }
 
-function createChoices() {
-    // loop through the radio button options
-    for (let i = 0; i < allQuestions[this.current].answers.length; i++){
-        let option = document.getElementById("label"+i);
-        // append answer text to each radio button label element
-        option.innerHTML = allQuestions[this.current].answers[i];
-    }
+/**
+ * This function generates a random Question.
+ * Uses Math.random to generate a randomQuestionIndex and gets the position of the
+ * randomQuestionIndex from the availableQuestions array and removes it from the array
+ * using splice() method so that the question is not repeated.
+ */
+function loadQuestion() {
+    let question = document.getElementById('question-block');
+    const randomQuestionIndex = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+    currentQuestion = randomQuestionIndex;
+    // make some HTML to display each question
+    question.innerHTML = currentQuestion.q;
+    const randomIndex = availableQuestions.indexOf(randomQuestionIndex);
+    availableQuestions.splice(randomIndex, 1);
+    // incrementing question counter
+    questionCounter++;
 }
 
-function getSelectedChoice() {
-    for (let i = 0; i < allQuestions[this.current].answers.length; i++){
-        if (document.forms.radioAnswers.elements.choice[i].checked == true){
-            let userAnswer = document.forms.radioAnswers.elements.choice[i].value;
-            return userAnswer;
-        }
+function getSelectedChoice(element) {
+    const value = parseInt(element.value);
+    if (value === currentQuestion.correct) {
+        console.log("answer is correct");
+        score++;
+        incrementScore();
+    } else {
+        console.log("answer is wrong");
+        incrementWrongAnswer();
     }
 }
 
 const next = document.getElementById("next");
 next.addEventListener("click", () => {
-    const answer = getSelectedChoice();
-    if (answer) {
-        if (answer == allQuestions[this.current].correct) {
-            score++;
-            incrementScore();
-        } else {
-            incrementWrongAnswer();
-        }
-        this.current++;
-        if (this.current < allQuestions.length){
-            createQuestion();
-        }
-        else {
-            localStorage.setItem("totalScore", score);
-            window.location.assign('end_quiz.html');
-        }
+    if (questionCounter === allQuestions.length) {
+        console.log("Quiz ends")
+        localStorage.setItem("totalScore", score);
+        window.location.assign('end_quiz.html');
+    } else {
+        createQuestion();
     }
 });
 
@@ -133,6 +138,7 @@ function questionChoice(selectedLevel) {
     };
 
     // Start Quiz
+    setAvailableQuestions();
     createQuestion();
     document.getElementsByClassName("quiz-area")[0].style.display = "initial"; //displays the quiz section
     document.getElementsByClassName("welcome-area")[0].style.display = "none"; //hides welcome user section

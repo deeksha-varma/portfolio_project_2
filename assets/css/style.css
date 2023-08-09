@@ -182,10 +182,32 @@ input.invalid {
 }
 
 #quiz-choice {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: auto;
-    row-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+#quiz-choice input {
+    width: 100px;
+}
+
+.column-left {
+    display: flex;
+    align-items: center;
+}
+
+.column-left label {
+    width: 100px;
+}
+
+.column-right label {
+    width: 100px;
+}
+
+.column-right {
+    display: flex;
+    align-items: center;
 }
 
 #next {

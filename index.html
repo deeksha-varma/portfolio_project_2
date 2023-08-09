@@ -28,7 +28,7 @@
         <h3>Rules and guidelines:</h3>
         <ul id="quiz-instructions">
             <li>To start playing the quiz, enter a username in the form and click 'Submit'.</li>
-            <li>Challenge yourself by selecting one of the four difficulty levels.</li>
+            <li>Challenge yourself by selecting one of the three difficulty levels.</li>
             <li>The quiz consists of 10 Multiple choice questions</li>
             <li>Answer each question by clicking on your chosen answer.</li>
             <li>At the end of the quiz, you can view your total score.</li>
@@ -65,10 +65,14 @@
             <h3 id="question-block"></h3>
             <!-- Radio button choices -->
             <form id="quiz-choice" name="radioAnswers">
-                <input type="radio" name="choice" value="0"><label id="label0"></label></input>
-                <input type="radio" name="choice" value="1"><label id="label1"></label></input>
-                <input type="radio" name="choice" value="2"><label id="label2"></label></input>
-                <input type="radio" name="choice" value="3"><label id="label3"></label></input>
+                <div class="column-left">
+                    <input type="radio" name="choice" id="option0"><label id="label0" for="option0"></label></input>
+                    <input type="radio" name="choice" id="option1"><label id="label1" for="option1"></label></input>
+                </div>
+                <div class="column-right">
+                    <input type="radio" name="choice" id="option2"><label id="label2" for="option2"></label></input>
+                    <input type="radio" name="choice" id="option3"><label id="label3" for="option3"></label></input>
+                </div>
             </form>
             <!-- Next Question -->
             <input type="button" value="next" id="next"></input>
