@@ -192,6 +192,16 @@ input.invalid {
     width: 100px;
 }
 
+/* style disabled radio buttons */
+
+input[type="radio"][disabled] + label {
+    color: rgba(185, 182, 182, 0.5);
+}
+
+input[type="radio"][disabled] {
+    border-color: rgba(185, 182, 182, 0.5);
+}
+
 .column-left {
     display: flex;
     align-items: center;
