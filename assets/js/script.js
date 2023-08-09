@@ -42,6 +42,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 let availableOptions = [];
 let currentQuestion;
+const radioInputs = document.querySelectorAll("input[type=radio]");
 
 // push the questions into availableQuestions array
 function setAvailableQuestions() {
@@ -107,6 +108,37 @@ function createChoices() {
         input.value = randomOptionIndex;
         input.setAttribute("onclick", "getSelectedChoice(this)");
     }
+    disableRadioOptions();
+}
+
+/**
+ * This function attempts to prevent malpractice by allowing the user
+ * to select only one option. Once an option is clicked,
+ * the other radio buttons are disabled.
+ */
+
+function disableRadioOptions() {
+    radioInputs.forEach(function (el) {
+        el.addEventListener('click', function () {
+          //getting name attribute of radio button which is clicked
+          var name = el.getAttribute('name');
+          //loop only through those radio button options where name is same and disable them
+          document.querySelectorAll('input[name="' + name + '"]').forEach(function (el) {
+            if (el.matches(":not(:checked)")) {
+              el.setAttribute('disabled', 'disabled');
+            }
+          });
+        });
+    });
+}
+
+/**
+ * Resets the disabled radio button options
+ */
+function resetRadioOptions() {
+    radioInputs.forEach(function (el) {
+        el.removeAttribute("disabled");
+    });
 }
 
 function getSelectedChoice(element) {
@@ -130,6 +162,7 @@ next.addEventListener("click", () => {
     } else {
         createQuestion();
         createChoices();
+        resetRadioOptions();
     }
 });
 
