@@ -145,17 +145,29 @@ In future expansion the site could include
 
 #### Wireframes
 
-The structure of the initial site will include three sections incorporated into the index.html page:
+The structure of the site will include three sections incorporated into the index.html page:
 
 1. **Welcome/Home Section** displays the rules of the game and asks the user to input a username in order to proceed to playing the game.
 
-2. **Choose difficulty level Section** that provides users 4 difficulty levels to choose from.
+![Home](docs/home_page.png)
 
-3. **Quiz Section** is the main game area where the user is presented with 10 questions to answer based on the chosen level of difficulty. A score area below the quiz answer choices keeps track of the score.
+2. **Choose difficulty level Section** that provides users 3 difficulty levels (Easy, Medium & Hard) to choose from.
 
-4. **Quiz Result Page** where the user's performance is denoted with the total score achieved and level at which the game was played with a celebratory message. The user can choose to play the game again.
+![Level](docs/choose_level_section.png)
 
-5. **404 Page** - a simple 404 Error page is also included.
+3. **Quiz Section** is the main game area where the user is presented with 10 questions to answer based on the chosen level of difficulty. A score area below the quiz answer choices keeps track of the score. A progress bar is displayed above the question that helps keep track of the questions left. A question counter is also shown to let the user know the question number they are currently solving. Once the user selects the answer choice, the other choices are disabled/greyed out. The user is prompted with an action button - "Next" to move onto the next question.
+
+![Quiz](docs/quiz_section.png)
+
+The quiz results are displayed on end_quiz.html page:
+
+4. **Quiz Result Page** where the user's performance is denoted with the total score achieved and level at which the game was played with a celebratory message. The user can choose to play the game again by clicking on the 'Retake quiz' button.
+
+![EndofQuiz](docs/end_quiz.png)
+
+5. **404 Page** - When user attempts to find a resource that doesn't exist, then the 404.html page is displayed to the user with an appropriate image and a button to start the quiz.
+
+![404](docs/404_page.png)
 
 ### Skeleton
 
@@ -310,7 +322,7 @@ The method from cloning a project from GitHub is below:
 ### Media
 * Background image <a href="https://www.freepik.com/free-vector/classroom-chalkboard-banner_4805837.htm#page=6&query=geography%20quiz%20for%20kids%20background%20chalkboard&position=1&from_view=search&track=ais">brgfx</a> on Freepik.
 * Quiz End page Image by <a href="https://www.freepik.com/free-vector/people-celebrating-goal-achievement-holding-trophy_12286435.htm#query=victory&position=26&from_view=search&track=sph">Freepik</a>
-* 404 page ...
+* 404 Image by <a href="https://www.freepik.com/free-vector/404-error-with-landscape-concept-illustration_20602801.htm#query=404%20not%20found%20earth&position=14&from_view=search&track=ais"> storyset</a> on Freepik
 
 ### Code
 
