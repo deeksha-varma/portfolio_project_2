@@ -139,7 +139,6 @@ In future expansion the site could include
 - Timer on each question.
 - Audio effects when navigating the quiz
 - Displaying the right answer to the user using colors. (ex. green background for the correct answer, red background for the incorrect answer)
-- Ability to save scores and keep track of their progress.
 
 ### Structure
 
@@ -181,23 +180,23 @@ Since the website is aimed for the kids, the chosen theme aims to convey a class
 
 ![Color Scheme](docs/color_scheme.png)
 
-1. Primary Background Color: #0F5136 (Dark Green)
+1. **Primary Background Color: #0F5136 (Dark Green)**
 
     This dark green color is reminiscent of lush landscapes and vegetation. It aligns with the geography theme, evoking images of forests and nature. The deep green also complements the classroom feel by recalling the green chalkboards often seen in educational settings.
 
-2. Text Color for Headers: #EBEADE (Light Gray)
+2. **Text Color for Headers: #EBEADE (Light Gray)**
 
     Light gray provides a neutral and balanced background that enhances readability and prevents visual fatigue. It complements the other vibrant colors and maintains a clean and organized appearance for text and content.
 
-3. Text Color for content: #EBEADE (Light Gray) and #482307 (Dark Brown)
+3. **Text Color for content: #EBEADE (Light Gray) and #482307 (Dark Brown)**
 
     Dark brown brings a sense of earthiness and stability to the color palette. It has been used for highlighting text inside buttons, providing a grounded and authoritative presence amidst the other lively colors.
 
-4. Interactive Elements (Buttons, Links): #E0A626 (Golden Yellow)
+4. **Interactive Elements (Buttons, Links): #E0A626 (Golden Yellow)**
 
     Golden yellow is warm and inviting, adding a touch of positivity and excitement to the color scheme. It has been used for interactive elements like buttons and links in footer, encouraging engagement and interaction with the app.
 
-5. Feedback Indicators (Correct, Incorrect): #0BDF24 (Vibrant Green) and #F60000 (Bright Red)
+5. **Feedback Indicators (Correct, Incorrect): #0BDF24 (Vibrant Green) and #F60000 (Bright Red)**
 
     This vibrant green is reminiscent of fresh growth and vibrancy. It has been used to indicate correct answers, providing a positive and affirming visual cue for users when they answer questions correctly.
     Bright red is attention-grabbing and is often associated with warnings or alerts. In the context of a quiz app, this color has been used to highlight incorrect answers, drawing immediate attention to responses.
