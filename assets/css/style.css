@@ -319,6 +319,13 @@ img {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
 }
 
+.img-not-found {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #222222;
+    width: 500px;
+    height: 500px;
+}
+
 /* Footer */
 
 footer {
