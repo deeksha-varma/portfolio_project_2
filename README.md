@@ -48,27 +48,27 @@ Welcome to the Geography Quiz for Kids! This interactive website is designed to 
 
 As a user of the Geography Quiz for Kids website, the primary goals are:
 
-* Educational Engagement: An interactive and educational experience for kids, helping them learn about geography in an engaging and enjoyable manner.
+* **Educational Engagement:** An interactive and educational experience for kids, helping them learn about geography in an engaging and enjoyable manner.
 
-* Customizable Difficulty: Aim to cater to children of different ages and skill levels by offering multiple difficulty levels. This allows each child to find an appropriate challenge and progress at their own pace.
+* **Customizable Difficulty:** Aim to cater to children of different ages and skill levels by offering multiple difficulty levels. This allows each child to find an appropriate challenge and progress at their own pace.
 
-* Comprehensive Geography Coverage: The quiz provides a comprehensive overview of global geography and helps kids develop a deeper understanding of the world.
+* **Comprehensive Geography Coverage:** The quiz provides a comprehensive overview of global geography and helps kids develop a deeper understanding of the world.
 
-* User-Friendly Interface: Aim to create a user-friendly website interface that is intuitive and easy for kids to navigate. Clear instructions, appealing visuals, and a seamless user experience are essential to keeping children engaged and motivated throughout the quiz.
+* **User-Friendly Interface:** Aim to create a user-friendly website interface that is intuitive and easy for kids to navigate. Clear instructions, appealing visuals, and a seamless user experience are essential to keeping children engaged and motivated throughout the quiz.
 
-* Score Tracking and Progress Monitoring: Incorporate a scoring system that allows kids to track their progress and see their performance. Providing a detailed score report at the end of each quiz encourages improvement and motivates kids to achieve better results.
+* **Score Tracking and Progress Monitoring:** Incorporate a scoring system that allows kids to track their progress and see their performance. Providing a detailed score report at the end of each quiz encourages improvement and motivates kids to achieve better results.
 
 ### Site Owner Goals
 
 As the owner of the Geography Quiz for Kids website, the goals are:
 
-* Educational Impact: Aim to provide a valuable educational resource for children, helping them develop their knowledge and understanding of geography in a fun and interactive way.
+* **Educational Impact:** Aim to provide a valuable educational resource for children, helping them develop their knowledge and understanding of geography in a fun and interactive way.
 
-* User Engagement: Create a website that captures and maintains the attention of young users.
+* **User Engagement:** Create a website that captures and maintains the attention of young users.
 
-* Positive User Experience: user-friendly, intuitive, and easy to navigate for both children and their parents or educators.
+* **Positive User Experience:** user-friendly, intuitive, and easy to navigate for both children and their parents or educators.
 
-* Expansion and Growth: While starting with a solid foundation, the aim is to expand the website's content and features over time. This may involve adding new quiz categories, incorporating additional learning resources, or integrating social features to encourage collaboration and competition among users.
+* **Expansion and Growth:** While starting with a solid foundation, the aim is to expand the website's content and features over time. This may involve adding new quiz categories, incorporating additional learning resources, or integrating social features to encourage collaboration and competition among users.
 
 ## User Experience
 
@@ -76,26 +76,26 @@ As the owner of the Geography Quiz for Kids website, the goals are:
 
 #### Target Audience
 
-* Children: The primary target audience is children between the ages of 6 and 12, who are interested in exploring and learning about geography.
-* Parents: The website aims to provide parents with a trustworthy and valuable tool to supplement their child's geography learning.
-* Educators
-* Home-schooling Parents
+* **Children:** The primary target audience is children between the ages of 6 and 12, who are interested in exploring and learning about geography.
+* **Parents:** The website aims to provide parents with a trustworthy and valuable tool to supplement their child's geography learning.
+* **Educators**
+* **Home-schooling Parents**
 
 #### User Requirements and Expectations
 
-* Engaging and Interactive: Users expect the quiz to be engaging and interactive, with visually appealing elements, such as images and illustrations, that capture children's attention and make the learning experience enjoyable.
+* **Engaging and Interactive:** Users expect the quiz to be engaging and interactive, with visually appealing elements, such as images and illustrations, that capture children's attention and make the learning experience enjoyable.
 
-* Age-Appropriate Content: The quiz questions and difficulty levels should be suitable for different age groups within the target audience. Younger children may require simpler questions, while older children may seek more challenging content.
+* **Age-Appropriate Content:** The quiz questions and difficulty levels should be suitable for different age groups within the target audience. Younger children may require simpler questions, while older children may seek more challenging content.
 
-* Clear Instructions and User-Friendly Interface: Users expect clear and concise instructions that guide them through the quiz. The website's interface should be intuitive and easy for children to navigate, ensuring they can interact with the quiz without confusion or frustration.
+* **Clear Instructions and User-Friendly Interface:** Users expect clear and concise instructions that guide them through the quiz. The website's interface should be intuitive and easy for children to navigate, ensuring they can interact with the quiz without confusion or frustration.
 
-* Comprehensive Geography Coverage: The quiz should cover a wide range of geography topics, including continents, countries, capitals, landmarks, and other relevant information. Users expect the quiz to provide a comprehensive overview of global geography.
+* **Comprehensive Geography Coverage:** The quiz should cover a wide range of geography topics, including continents, countries, capitals, landmarks, and other relevant information. Users expect the quiz to provide a comprehensive overview of global geography.
 
-* Customizable Difficulty Levels: Users should have the option to select difficulty levels that match their knowledge and skills. This allows for personalized learning experiences and ensures appropriate challenges for each user.
+* **Customizable Difficulty Levels:** Users should have the option to select difficulty levels that match their knowledge and skills. This allows for personalized learning experiences and ensures appropriate challenges for each user.
 
-* Score Tracking and Progress Monitoring: Users expect a scoring system that tracks their performance and provides immediate feedback on correct and incorrect answers. They also anticipate a comprehensive score report at the end of each quiz, allowing them to monitor their progress and identify areas for improvement.
+* **Score Tracking and Progress Monitoring:** Users expect a scoring system that tracks their performance and provides immediate feedback on correct and incorrect answers. They also anticipate a comprehensive score report at the end of each quiz, allowing them to monitor their progress and identify areas for improvement.
 
-* Compatibility and Accessibility: Users expect the website to be compatible with different devices (desktop, laptop, tablet, and mobile) and various web browsers. Additionally, ensuring accessibility features, such as keyboard navigation and support for screen readers, is important for users with disabilities.
+* **Compatibility and Accessibility:** Users expect the website to be compatible with different devices (desktop, laptop, tablet, and mobile) and various web browsers. Additionally, ensuring accessibility features, such as keyboard navigation and support for screen readers, is important for users with disabilities.
 
 #### User Stories
 
@@ -125,13 +125,13 @@ As the site owner, I want users to ...
 
 At the initial stage the site will include a welcome section that displays the rules of the game and lets the user input a username, then the user is given a choice of four levels of difficulty of the game. Finally the game will start and run though 10 questions at the chosen level. An end of game page will then load, here the user can opt to play the game again.
 
-1. Welcome section:
+1. **Welcome section:**
     A user input field that lets the user input their name. Displays the rules of the game.
-2. Choose difficulty level section:
+2. **Choose difficulty level section:**
     This section will provide the user the option to choose from four difficulty levels.
-3. Quiz section:
+3. **Quiz section:**
     The user is presented with the quiz questions. The question is of the multiple choice format at the chosen difficulty level.
-4. End of quiz page:
+4. **End of quiz page:**
     The user is presented with their score and a congratulatory message for successfully completing the quiz. The user can also choose to play again.
 
 #### Future Additions
@@ -363,7 +363,6 @@ The site was developed as a part of a Full Stack Software Development Diploma Co
 
 I would like to thank -
 * my mentor [Mitko Bachvarov](https://www.linkedin.com/in/mitko-bachvarov-40b50776/) for his timely availability, feedback, guidance and support.
-* my cohort facilitator, Kay for pointing me in the right direction during the course of the project. Also providing me with resources to bridge the gaps in my learning.
 * My husband and son, without their support this could not have been possible. Thanks to their feedback.
 
 Deeksha Varma 2023.
