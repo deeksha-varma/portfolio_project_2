@@ -283,7 +283,7 @@ input[type="radio"][disabled] {
 
 /* End quiz section */
 
-img {
+.end-quiz-img {
     border-radius: 20px;
     box-shadow: 5px 5px 10px #222222;
     max-width: 350px;
