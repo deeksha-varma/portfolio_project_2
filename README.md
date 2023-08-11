@@ -347,6 +347,15 @@ The method from cloning a project from GitHub is below:
 * Background image <a href="https://www.freepik.com/free-vector/classroom-chalkboard-banner_4805837.htm#page=6&query=geography%20quiz%20for%20kids%20background%20chalkboard&position=1&from_view=search&track=ais">brgfx</a> on Freepik.
 * Quiz End page Image by <a href="https://www.freepik.com/free-vector/people-celebrating-goal-achievement-holding-trophy_12286435.htm#query=victory&position=26&from_view=search&track=sph">Freepik</a>
 * 404 Image by <a href="https://www.freepik.com/free-vector/404-error-with-landscape-concept-illustration_20602801.htm#query=404%20not%20found%20earth&position=14&from_view=search&track=ais"> storyset</a> on Freepik
+* Easy level success image 1 Photo by <a href="https://unsplash.com/@zacdurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zac Durant</a> on <a href="https://unsplash.com/photos/_6HzPU9Hyfg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* Easy level success image 2 Photo by <a href="https://unsplash.com/@whitfieldjordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jordan Whitfield</a> on <a href="https://unsplash.com/photos/sm3Ub_IJKQg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* Easy level success image 3 Photo by <a href="https://unsplash.com/@dbeamer_jpg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Drew Beamer</a> on <a href="https://unsplash.com/photos/Vc1pJfvoQvY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* Medium level image 1 <a href="https://www.freepik.com/free-vector/employee-appreciation-concept-illustration_35105461.htm#query=impressive%20work&position=49&from_view=search&track=ais">Image by storyset</a> on Freepik
+* Medium level image 2 by <a href="https://www.freepik.com/free-vector/hand-drawn-good-job-lettering_13561586.htm#page=4&query=image%20with%20well%20done%20text&position=0&from_view=search&track=ais">Freepik</a>
+* Medium level image 3 by <a href="https://unsplash.com/@helloimnik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nik</a> on <a href="https://unsplash.com/photos/z1d-LP8sjuI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* Hard level image 1 by <a href="https://www.freepik.com/free-vector/superhero-girl-saving-world_3530030.htm#query=true%20geography%20entusiast&position=17&from_view=search&track=ais">rawpixel.com</a> on Freepik
+* Hard level image 2 by <a href="https://www.freepik.com/free-vector/positive-lettering-with-photo-concept_7088914.htm#page=3&query=image%20with%20well%20done%20text&position=45&from_view=search&track=ais">Freepik</a>
+* Hard level image 3 by <a href="https://www.freepik.com/free-vector/positive-lettering-with-image_7090100.htm#query=keep%20trying%20Dont%20give%20up&position=45&from_view=search&track=ais">Freepik</a>
 
 ### Code
 
