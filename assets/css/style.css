@@ -368,6 +368,18 @@ input[type="radio"][disabled] {
     height: 500px;
 }
 
+/* HighScores/Leaderboard Styling */
+
+#highScoresList {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
 /* Footer */
 
 footer {
