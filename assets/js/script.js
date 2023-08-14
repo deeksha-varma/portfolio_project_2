@@ -145,21 +145,20 @@ function resetRadioOptions() {
 function getSelectedChoice(element) {
     const value = parseInt(element.value);
     if (value === currentQuestion.correct) {
-        console.log("answer is correct");
         score++;
         incrementScore();
     } else {
-        console.log("answer is wrong");
         incrementWrongAnswer();
     }
 }
 
 const next = document.getElementById("next");
+const MAX_QUESTIONS = 9;
+
 next.addEventListener("click", () => {
-    if (questionCounter === allQuestions.length) {
-        console.log("Quiz ends")
-        localStorage.setItem("totalScore", score);
-        window.location.assign('end_quiz.html');
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem("mostRecentScore", score);
+        return window.location.assign('end_quiz.html');
     } else {
         createQuestion();
         createChoices();

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- font awesome script -->
-	<script src="https://kit.fontawesome.com/a4c18554aa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a4c18554aa.js" crossorigin="anonymous"></script>
     <title>Leaderboard</title>
 </head>
 <body>
-    <h1>Leaderboard</h1>
+    <div class="flex-center flex-column">
+        <h1>Leaderboard</h1>
+        <ul id="highScoresList"></ul>
+        <a href="/" class="btn">Go Home <i class="fa-solid fa-house-chimney" style="color: #0F5136;"></i></a>
+    </div>
     <!-- Start Footer Section-->
     <footer>
         <a href="https://github.com/deeksha-varma" target="_blank" rel="noopener" aria-label="Github page of developer (opens in a new tab).">
@@ -18,5 +22,6 @@
             <i class="fa-brands fa-linkedin-in"></i></a>
     </footer>
     <!-- End Footer Section-->
+    <script src="assets/js/highscores.js"></script>
 </body>
 </html>
