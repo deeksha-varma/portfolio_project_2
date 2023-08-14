@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body {
     margin: 0;
-    min-height: 100vh;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
     box-sizing: border-box;
     background: url('/assets/images/chalkboard_banner.jpg');
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: rgb(14, 43, 2);
     font-family: Lato, sans-serif;
     font-weight: 400;
     color: #EBEADE;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
 }
 
 h1, h2, h3 {
@@ -22,7 +23,45 @@ h1, h2, h3 {
     letter-spacing: 0.8px;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling of Play button & High Scores button */
+.btn {
+    font-size: 2rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #0F5136;
+    background: #f5dba3;
+    border-radius: 14px;
+    display: inline-block;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(211, 203, 160, 0.7);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
 /* username form styling */
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 form label {
     padding: 0.5rem;
@@ -83,27 +122,27 @@ input.invalid {
 
 /* Rules and Guidelines */
 
+.rules-section {
+    flex-wrap: wrap;
+}
+
 #quiz-instructions {
     list-style-type: square;
     font-size: 1.2rem;
-    text-align: left;
-    padding-left: 2rem;
     line-height: 1.5rem;
+    margin-top: 0;
+    padding: 10px 40px;
+    border: 2px solid #E0A626;
+    border-radius: 25px;
+    background-color: rgba(81, 68, 10, 0.4);
 }
 
 /* Choose level section styling */
 
-.question-levels {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Styles for level buttons referenced from https://getcssscan.com/css-buttons-examples */
 
 .level {
-    width: 100%;
+    width: 350px;
     appearance: button;
     background-color: transparent;
     background-image: linear-gradient(to bottom, #fff, #f8eedb);
@@ -142,13 +181,6 @@ input.invalid {
 
 .quiz-area {
     width: 60%;
-}
-
-.quiz-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 #question-counter {
@@ -290,7 +322,7 @@ input[type="radio"][disabled] {
     max-height: 350px;
 }
 
-.btn {
+.retake-quiz-btn {
     background-color: transparent;
     background-image: linear-gradient(to bottom, #fff, #f8eedb);
     border: 0 solid #e5e7eb;
@@ -310,13 +342,13 @@ input[type="radio"][disabled] {
     box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
 }
 
-.btn:active {
+.retake-quiz-btn:active {
     background-color: #f3f4f6;
     box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
     transform: translateY(0.125rem);
 }
 
-.btn:focus {
+.retake-quiz-btn:focus {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
 }
 
@@ -332,12 +364,14 @@ input[type="radio"][disabled] {
 /* Footer */
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    height: 70px;
-    width: 100%;
     background-color: #EBEADE;
 }
 

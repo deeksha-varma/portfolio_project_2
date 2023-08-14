@@ -28,6 +28,7 @@ function validate(e) {
         window.localStorage.setItem("username", userNameField.value);
         document.getElementsByClassName("welcome-area")[0].style.display = "initial";
         document.getElementsByClassName("form-area")[0].style.display = "none";
+        document.getElementsByClassName("rules-section")[0].style.display = "none";
         let user = window.localStorage.getItem("username");
         document.getElementById("welcome-text").innerText = `Welcome to the Quiz, ${user}!`;
     }

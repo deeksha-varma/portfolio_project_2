@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awesome script -->
+	<script src="https://kit.fontawesome.com/a4c18554aa.js" crossorigin="anonymous"></script>
+    <title>Geography Quiz</title>
+</head>
+<body>
+    <!-- Start of Header Section-->
+    <header>
+        <h1>Geography for kids</h1>
+        <h2>Interactive and fun quiz</h2>
+    </header>
+    <!-- End Header Section-->
+    <!-- Start of Username form Section -->
+    <div class="form-area">
+        <h3>Please enter a username to start playing!</h3>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <span role="alert" id="usernameError" aria-hidden="true"></span>
+            <button type="submit" id="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <!-- End Username form Section -->
+    <!-- Start of Rules Section -->
+    <div class="rules-section flex-center flex-column">
+        <h3>Rules and guidelines:</h3>
+        <ul id="quiz-instructions">
+            <li>To start playing the quiz, enter a username in the form and click 'Submit'.</li>
+            <li>Challenge yourself by selecting one of the three difficulty levels.</li>
+            <li>The quiz consists of 10 Multiple choice questions</li>
+            <li>Answer each question by clicking on your chosen answer.</li>
+            <li>At the end of the quiz, you can view your total score.</li>
+            <li>You can choose to play again.</li>
+        </ul>
+    </div>
+    <!-- End Rules Section -->
+
+    <!-- Start of Choose Level Section -->
+    <div class="welcome-area">
+        <h3 id="welcome-text"></h3>
+        <h3>Choose your level:</h3>
+        <div class='flex-center flex-column'>
+            <button class="level" onClick="questionChoice(this)">Easy</button>
+            <button class="level" onClick="questionChoice(this)">Medium</button>
+            <button class="level" onClick="questionChoice(this)">Hard</button>
+        </div>
+    </div>
+    <!-- End Choose Level Section -->
+
+    <!-- Start of Quiz Section -->
+    <section class="quiz-area" aria-labelledby="quiz-questions">
+        <div class="flex-center flex-column">
+            <!-- Question Counter & Progress Bar -->
+            <div id="question-counter">
+                <p id="progressText" class="prefix">
+                    Question
+                </p>
+                <div id="progressBar">
+                    <div id="progressBarFull"></div>
+                </div>
+            </div>
+            <!-- Question -->
+            <h3 id="question-block"></h3>
+            <!-- Radio button choices -->
+            <form id="quiz-choice" name="radioAnswers">
+                <div class="column-left">
+                    <input type="radio" name="choice" id="option0"><label id="label0" for="option0"></label></input>
+                    <input type="radio" name="choice" id="option1"><label id="label1" for="option1"></label></input>
+                </div>
+                <div class="column-right">
+                    <input type="radio" name="choice" id="option2"><label id="label2" for="option2"></label></input>
+                    <input type="radio" name="choice" id="option3"><label id="label3" for="option3"></label></input>
+                </div>
+            </form>
+            <!-- Next Question -->
+            <input type="button" value="next" id="next"></input>
+            <!-- Scoring Area -->
+            <div class="score-area">
+                <span class="correct"><i class="fa-solid fa-check"></i> : <span id="correct-counter">0</span></span>
+                <span class="wrong"><i class="fa-solid fa-x"></i> : <span id="wrong-counter">0</span></span>
+            </div>
+        </div>
+    </section>
+    <!-- End Quiz Section -->
+    <!-- Start Footer Section-->
+    <footer>
+        <a href="https://github.com/deeksha-varma" target="_blank" rel="noopener" aria-label="Github page of developer (opens in a new tab).">
+            <i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/deeksha-varma-74aa18105/" target="_blank" rel="noopener" aria-label="LinkedIn page of developer (opens in a new tab).">
+            <i class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+    <!-- End Footer Section-->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
+</body>
+</html>
