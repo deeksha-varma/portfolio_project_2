@@ -1,9 +1,9 @@
 # Geography for Kids
 (Developer: Deeksha Varma)
 
-Mockup image
+![Mockup image](docs/responsive_preview.png)
 
-You can view the live site here - <a href="#" target="_blank" rel="noopener">Geography quiz for Kids</a>
+You can view the live site here - <a href="https://deeksha-varma.github.io/portfolio_project_2/" target="_blank" rel="noopener">Geography quiz for Kids</a>
 
 ## Table of Contents
 1. [Introduction](#introduction)
