@@ -50,7 +50,7 @@
         answers: ['Russia', 'Greece', 'Spain', 'Italy'],
         correct: 2
     }
-]
+];
 
 const allQuestionsMedium = [
     {
@@ -103,7 +103,7 @@ const allQuestionsMedium = [
         answers: ['4', '5', '6', '7'],
         correct: 3
     }
-]
+];
 
 const allQuestionsHard = [
     {
@@ -156,4 +156,4 @@ const allQuestionsHard = [
         answers: ['105', '145', '195', '245'],
         correct: 2
     }
-]
+];

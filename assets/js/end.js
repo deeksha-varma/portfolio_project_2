@@ -9,9 +9,7 @@ let user = window.localStorage.getItem("username");
 let finalMessage = document.getElementById("final-message");
 const resultImageDiv = document.getElementById("result-image");
 const total = 10;
-const saveScoreBtn = document.querySelector("#saveScoreBtn");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-const MAX_HIGH_SCORES = 5;
 
 // make some HTML to display the results of the quiz
 finalScore.innerHTML = `<h2>Your Score: ${mostRecentScore}/${total}</h2>`;
@@ -28,7 +26,7 @@ function displayCustomResult() {
     if (userLevel == "Easy") {
         if (mostRecentScore >= 8) {
             finalMessage.innerHTML = `<h2>Great job! You're a geography superstar!</h2>`;
-            imageUrl = "assets/images/zac_durant_unsplash.jpg"
+            imageUrl = "assets/images/zac_durant_unsplash.jpg";
             resultImageDiv.innerHTML = `<img src="${imageUrl}" alt="a man with open arms looking at the sunset">`;
             resultImageDiv.firstChild.className = "end-quiz-img";
         }
@@ -101,13 +99,13 @@ function saveHighScore(e) {
         score: mostRecentScore,
         name: user,
         level: userLevel
-    }
+    };
 
     highScores.push(score);
 
     highScores.sort((a, b) => {
         return b.score - a.score;
-    })
+    });
 
     highScores.splice(5);
 

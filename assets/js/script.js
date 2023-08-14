@@ -20,11 +20,10 @@ function validate(e) {
         userNameField.classList.add("invalid");
         nameError.setAttribute("aria-hidden", false);
         nameError.setAttribute("aria-invalid", true);
-        nameError.innerText = "Please fill in a username to proceed!"
+        nameError.innerText = "Please fill in a username to proceed!";
     }
 
     if (userNameField.value) {
-        console.log(userNameField.value)
         window.localStorage.setItem("username", userNameField.value);
         document.getElementsByClassName("welcome-area")[0].style.display = "initial";
         document.getElementsByClassName("form-area")[0].style.display = "none";
@@ -35,7 +34,6 @@ function validate(e) {
 }
 
 var allQuestions;
-var current = 0;
 let score = 0;
 const progressText = document.querySelector("#progressText");
 const progressBarFull = document.querySelector("#progressBarFull");
@@ -61,8 +59,8 @@ function createQuestion() {
     // generate a random question
     loadQuestion();
     // progress bar styling
-    progressText.innerText = `Question ${questionCounter} of ${allQuestions.length}`
-    progressBarFull.style.width = `${(questionCounter/allQuestions.length) * 100}%`
+    progressText.innerText = `Question ${questionCounter} of ${allQuestions.length}`;
+    progressBarFull.style.width = `${(questionCounter/allQuestions.length) * 100}%`;
 }
 
 /**
@@ -96,7 +94,7 @@ function createChoices() {
     // push options into availableOptions array
     for (let i = 0; i < optionLength; i++) {
         availableOptions.push(i);
-    };
+    }
     // create options
     for (let i = 0; i < optionLength; i++) {
         let randomOptionIndex = availableOptions[Math.floor(Math.random() * availableOptions.length)];
@@ -196,8 +194,8 @@ function questionChoice(selectedLevel) {
     } else if (userChoice === 'Hard') {
         allQuestions = allQuestionsHard;
     } else {
-        alert('You have not made a choice!')
-    };
+        alert('You have not made a choice!');
+    }
 
     // Start Quiz
     setAvailableQuestions();
