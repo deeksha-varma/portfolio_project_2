@@ -126,3 +126,12 @@
         margin: 10px;
     }
 }
+
+/* 404 page */
+
+@media screen and (max-width: 370px) {
+    .img-not-found {
+        max-width: 230px;
+        max-height: 230px;
+    }
+}

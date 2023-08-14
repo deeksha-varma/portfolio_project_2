@@ -364,8 +364,8 @@ input[type="radio"][disabled] {
 .img-not-found {
     border-radius: 20px;
     box-shadow: 5px 5px 10px #222222;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
 }
 
 /* HighScores/Leaderboard Styling */
