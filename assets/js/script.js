@@ -35,6 +35,7 @@ function validate(e) {
 
 var allQuestions;
 let score = 0;
+var current = 0;
 const progressText = document.querySelector("#progressText");
 const progressBarFull = document.querySelector("#progressBarFull");
 let questionCounter = 0;
