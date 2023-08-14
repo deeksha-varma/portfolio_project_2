@@ -315,6 +315,12 @@ input[type="radio"][disabled] {
 
 /* End quiz section */
 
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .end-quiz-img {
     border-radius: 20px;
     box-shadow: 5px 5px 10px #222222;
@@ -340,6 +346,7 @@ input[type="radio"][disabled] {
     text-decoration: none;
     transition: all .1s cubic-bezier(.4, 0, .2, 1);
     box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+    margin: 5px;
 }
 
 .retake-quiz-btn:active {
