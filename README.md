@@ -40,7 +40,7 @@ You can view the live site here - <a href="#" target="_blank" rel="noopener">Geo
 8. [Credits](#credits)
 
 ## Introduction
-Welcome to the Geography Quiz for Kids! This interactive website is designed to provide an engaging and educational experience for young learners, helping them explore the fascinating world of geography while having fun. The quiz consists of 10 multiple choice questions on world geography. The player can choose between several levels of difficulty. The player gets feedback on the number of questions and a score card is shown to let the player know the number of correct and incorrect answers.
+Welcome to the Geography Quiz for Kids! This interactive website is designed to provide an engaging and educational experience for young learners, helping them explore the fascinating world of geography while having fun. The quiz consists of 10 multiple choice questions on world geography. The player can choose between several levels of difficulty. The player gets feedback on the number of questions and a score card is shown to let the player know the number of correct and incorrect answers. The quiz consists of randomly generated questions and answers. There is also form validation for the username form. In order to prevent malpractice, the radio button options in the quiz are disabled/greyed out so that the user cannot change their answer once selected. The website is fully responsive and also includes a 404 page. Other quiz elements such as Question counter, Progress bar styling, motivational messages to the user depending on how much they scored in the quiz is also included. A leaderboard section is also included to display the top 5 quiz scores.
 
 ## Project Goals
 
@@ -108,6 +108,7 @@ As a first time user, I want to ...
 5. ... see a visual indicator or progress bar showing how many questions I've answered and how many are left. At the end of the quiz, I expect a comprehensive score report that highlights my performance.
 6. ... expect a user-friendly interface with intuitive buttons or navigation elements.
 7. ... want to feel a sense of accomplishment. Celebratory messages or animations, along with an overall score or ranking, would be motivating. I expect an option to restart the quiz.
+8. ... see a High Scores page to see the top scores.
 
 ##### Returning Users
 As a returning user, I want to ...
@@ -123,16 +124,21 @@ As the site owner, I want users to ...
 
 #### Intial Stage
 
-At the initial stage the site will include a welcome section that displays the rules of the game and lets the user input a username, then the user is given a choice of four levels of difficulty of the game. Finally the game will start and run though 10 questions at the chosen level. An end of game page will then load, here the user can opt to play the game again.
+At the initial stage the site will include a welcome section that displays two buttons. 'Play' button to start playing the quiz and a 'HighScores' button to view the Leaderboard. The username for page displays the rules of the game and lets the user input a username, then the user is given a choice of four levels of difficulty of the game. Finally the game will start and run though 10 questions at the chosen level. An end of game page will then load, here the user can opt to play the game again or save their score.
 
 1. **Welcome section:**
+    'Play' button - presents the user with a form to continue playing the game.
+    'High Scores' button - presents the user with a 'Leaderboard'.
+2. **Username form & Rules of the quiz:**
     A user input field that lets the user input their name. Displays the rules of the game.
-2. **Choose difficulty level section:**
-    This section will provide the user the option to choose from four difficulty levels.
-3. **Quiz section:**
-    The user is presented with the quiz questions. The question is of the multiple choice format at the chosen difficulty level.
-4. **End of quiz page:**
-    The user is presented with their score and a congratulatory message for successfully completing the quiz. The user can also choose to play again.
+3. **Choose difficulty level section:**
+    This section will provide the user the option to choose from three difficulty levels - Easy, Medium, Hard.
+4. **Quiz section:**
+    The user is presented with the quiz questions. The question is of the multiple choice format at the chosen difficulty level. The answers are displayed as radio buttons.
+5. **End of quiz page:**
+    The user is presented with their score and a congratulatory message and an image for successfully completing the quiz. The user can also choose to play again or save score.
+6. **Leaderboard/High Scores page:**
+    The user can see the top 5 scores of the quiz.
 
 #### Future Additions
 In future expansion the site could include
@@ -144,33 +150,45 @@ In future expansion the site could include
 
 #### Wireframes
 
-The structure of the site will include three sections incorporated into the index.html page:
+The structure of the site which houses the game controls are incorporated into the index.html page:
 
-1. **Welcome/Home Section** displays the rules of the game and asks the user to input a username in order to proceed to playing the game.
+1. **Welcome/Home Section** displays the main control buttons of the game. 'Play' button and 'High Scores' button to view the leaderboard.
 
 ![Home](docs/home_page.png)
 
-2. **Choose difficulty level Section** that provides users 3 difficulty levels (Easy, Medium & Hard) to choose from.
+The username form section, difficulty level section & main quiz section are incorporated into the game.html page:
+
+2. **Username form section & Rules** displays the rules of the game and asks the user to input a username in order to proceed playing the game.
+
+![UsernameForm](docs/username_form_and_rules_page.png)
+
+3. **Choose difficulty level Section** that provides users 3 difficulty levels (Easy, Medium & Hard) to choose from.
 
 ![Level](docs/choose_level_section.png)
 
-3. **Quiz Section** is the main game area where the user is presented with 10 questions to answer based on the chosen level of difficulty. A score area below the quiz answer choices keeps track of the score. A progress bar is displayed above the question that helps keep track of the questions left. A question counter is also shown to let the user know the question number they are currently solving. Once the user selects the answer choice, the other choices are disabled/greyed out. The user is prompted with an action button - "Next" to move onto the next question.
+4. **Quiz Section** is the main game area where the user is presented with 10 questions to answer based on the chosen level of difficulty. A score area below the quiz answer choices keeps track of the score. A progress bar is displayed above the question that helps keep track of the questions left. A question counter is also shown to let the user know the question number they are currently solving. Once the user selects the answer choice, the other choices are disabled/greyed out. The user is prompted with an action button - "Next" to move onto the next question.
 
 ![Quiz](docs/quiz_section.png)
 
 The quiz results are displayed on end_quiz.html page:
 
-4. **Quiz Result Page** where the user's performance is denoted with the total score achieved and level at which the game was played with a celebratory message. The user can choose to play the game again by clicking on the 'Retake quiz' button.
+5. **Quiz Result Page** where the user's performance is denoted with the total score achieved and level at which the game was played with a celebratory message and an image based on score. The user can choose to play the game again by clicking on the 'Retake quiz' button. The user can also to choose to save their score by clicking on 'Save' button.
 
 ![EndofQuiz](docs/end_quiz.png)
 
-5. **404 Page** - When user attempts to find a resource that doesn't exist, then the 404.html page is displayed to the user with an appropriate image and a button to start the quiz.
+The leaderboard section is incorporated into highscores.html page
+
+6. **Leaderboard/High Scores Page** displays the top 5 high scores of the quiz.
+
+![Leaderboard](docs/leaderboard.png)
+
+7. **404 Page** - When user attempts to find a resource that doesn't exist, then the 404.html page is displayed to the user with an appropriate image and a button to start the quiz.
 
 ![404](docs/404_page.png)
 
 ### Skeleton
 
-As described in the previous section with the aid of wireframes, this quiz game website includes 4 interactive sections, which all have a heading, a central display area and a footer. The home page/welcome page has a username input field which is required to play the game. Upon entering the username, the user has to choose the level at which they would like to play the game, upon selecting the level, the game loads and runs, incrementing the correct or incorrect answer count as the answers are chosen. The end of the quiz page displays final score to the user.
+As described in the previous section with the aid of wireframes, this quiz game website includes 4 interactive sections, which all have a heading, a central display area and a footer. The home page/welcome page has two buttons namely 'Play' button to proceed to username form section and a 'High Scores' button that takes the user to leaderboard page. The Username form page has a username input field which is required to play the game. Upon entering the username, the user has to choose the level at which they would like to play the game, upon selecting the level, the game loads and runs, incrementing the correct or incorrect answer count as the answers are chosen. The end of the quiz page displays final score to the user and a message to user depending on score achieved. There are two buttons on this final page - a 'Save' button that allows the user to save their score and a 'Go Home' button that takes the user back to home page.
 
 ### Surface
 
