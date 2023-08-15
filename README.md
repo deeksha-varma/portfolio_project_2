@@ -292,6 +292,8 @@ Lato is the font used. It is a versatile and modern font that can be a suitable 
 
 ### CSS Validation
 
+![CSS Validation](docs/css_validation_image.png)
+
 ### JavaScript Validation
 The linter [JSHint](https://jshint.com/) was used to validate the JavaScript files.
 
@@ -374,6 +376,8 @@ After running the website through [W3C CSS Validator](https://jigsaw.w3.org/css-
 ![CSS Validation Error](docs/css_warnings.png)
 
 The css styles were removed and then validated once again with no warnings<br /><br />
+
+![CSS Validation Error Solved](docs/css_validation_image.png)
 
 ### Lighthouse Testing
 
