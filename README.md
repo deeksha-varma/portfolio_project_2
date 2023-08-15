@@ -261,11 +261,36 @@ Lato is the font used. It is a versatile and modern font that can be a suitable 
 
 ### Code Validation
 
+* The website has been thoroughly tested. All the code has been validated via the [W3C HTML Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). The issues were noted, documented and fixed as shown below.
+
 ### HTML Validation
-The W3C Markup Validation Service was used to validate the HTML of the website.
+
+<details>
+<summary>Home Page</summary>
+<img src="docs/index_html_validation.png" width="700">
+</details>
+
+<details>
+<summary>Game Page</summary>
+<img src="docs/game_html_validation.png" width="700">
+</details>
+
+<details>
+<summary>End of Quiz Page</summary>
+ <img src="docs/end_quiz_html_validation.png" width="700">
+</details>
+
+<details>
+<summary>Leaderboard Page</summary>
+<img src="docs/highscores_html_validation.png" width="700">
+</details>
+
+<details>
+<summary>404 Error Page</summary>
+<img src="docs/404_html_validation.png" width="700">
+</details>
 
 ### CSS Validation
-The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
 
 ### JavaScript Validation
 The linter [JSHint](https://jshint.com/) was used to validate the JavaScript files.
@@ -276,6 +301,7 @@ The linter [JSHint](https://jshint.com/) was used to validate the JavaScript fil
 
 The website was put through [a11y](https://color.a11y.com/Contrast/) to further test the contrast and found no issues. <br /><br />
 
+![a11y Test](docs/a11y_contrast_test_image.png)
 
 ### Lighthouse Testing
 
@@ -285,7 +311,6 @@ The website was assessed for the following parameters using [Chrome Dev Tools](h
 * Accessibility - Is the site accessible for all users and how can it be improved.
 * Best Practices - Site conforms to industry best practices.
 * SEO - Search Engine Optimisation. Is the site optimised for search engine result rankings.<br /><br />
-
 
 ### Responsiveness Testing
 * The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).<br /><br />
@@ -327,6 +352,25 @@ The websites compatability was tested on the following browsers and no issues we
         | End of Game Page | Choose to play again | Welcome page displays |  |
 
 ## Bugs, Fixes and Outstanding issues
+
+### HTML Validation
+
+After putting the website through [HTML Validation](https://validator.w3.org/), I was presented with the following errors for the pages (game.html, 404.html):<br /><br />
+
+<details>
+<summary>Game Page</summary>
+<img src="docs/game_html_validation_error.png" width="700">
+</details>
+
+<details>
+<summary>404 Error Page</summary>
+<img src="docs/404_html_validation_error.png" width="700">
+</details>
+
+
+### Lighthouse Testing
+
+After running the website through [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) Lighthouse Testing, I was presented with the following accessibility score for index page:<br /><br />
 
 ## Deployment & Development
 
