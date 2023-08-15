@@ -314,6 +314,34 @@ The website was assessed for the following parameters using [Chrome Dev Tools](h
 * Best Practices - Site conforms to industry best practices.
 * SEO - Search Engine Optimisation. Is the site optimised for search engine result rankings.<br /><br />
 
+All pages scored high on performance, accessibility and best practices.
+The SEO score for Home page, Game page scored a little less and necessary code changes were made and is documented below.
+
+<details>
+<summary>Home Page</summary>
+<img src="docs/lighthouse_desktop_index.png" width="700">
+</details>
+
+<details>
+<summary>Game Page</summary>
+<img src="docs/lighthouse_desktop_game.png" width="700">
+</details>
+
+<details>
+<summary>End of Quiz Page</summary>
+<img src="docs/lighthouse_desktop_end_quiz.png" width="700">
+</details>
+
+<details>
+<summary>Leaderboard Page</summary>
+<img src="docs/lighthouse_desktop_leaderboard.png" width="700">
+</details>
+
+<details>
+<summary>404 Error Page</summary>
+<img src="docs/lighthouse_desktop_404.png" width="700">
+</details>
+
 ### Responsiveness Testing
 * The responsive design tests were carried out manually with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).<br /><br />
 
@@ -381,7 +409,73 @@ The css styles were removed and then validated once again with no warnings<br />
 
 ### Lighthouse Testing
 
-After running the website through [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) Lighthouse Testing, I was presented with the following accessibility score for index page:<br /><br />
+After running the website through [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) Lighthouse Testing, I was presented with the following SEO score for index page:<br /><br />
+
+<details>
+<summary>Home Page</summary>
+<img src="docs/lighthouse_desktop_index.png" width="700">
+</details>
+
+* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the score then improved.
+
+<details>
+<summary>Home Page</summary>
+<img src="docs/lighthouse_desktop_index_1.png" width="700">
+</details>
+
+<br />
+<details>
+<summary>Game Page</summary>
+<img src="docs/lighthouse_desktop_game.png" width="700">
+</details>
+
+* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the score then improved.
+
+<details>
+<summary>Game Page</summary>
+<img src="docs/lighthouse_desktop_game_1.png" width="700">
+</details>
+
+<br />
+<details>
+<summary>End of Quiz Page</summary>
+<img src="docs/lighthouse_desktop_end_quiz.png" width="700">
+</details>
+
+* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the score then improved.
+
+<details>
+<summary>End of Quiz Page</summary>
+<img src="docs/lighthouse_desktop_end_quiz_1.png" width="700">
+</details>
+
+<br />
+<details>
+<summary>Leaderboard</summary>
+<img src="docs/lighthouse_desktop_leaderboard.png" width="700">
+</details>
+
+* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the SEO score then improved.
+
+<details>
+<summary>Leaderboard</summary>
+<img src="docs/lighthouse_desktop_leaderboard_1.png" width="700">
+</details>
+
+<br />
+<details>
+<summary>404 Page</summary>
+<img src="docs/lighthouse_desktop_404.png" width="700">
+</details>
+
+* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the SEO score then improved.
+
+<details>
+<summary>404 Page</summary>
+<img src="docs/lighthouse_desktop_404_1.png" width="700">
+</details>
+
+
 
 ## Deployment & Development
 
