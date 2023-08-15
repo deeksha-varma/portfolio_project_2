@@ -44,7 +44,7 @@
 
     <!-- Start of Choose Level Section -->
     <div class="welcome-area">
-        <h3 id="welcome-text"></h3>
+        <h3 id="welcome-text">Welcome to Geography Quiz</h3>
         <h3>Choose your level:</h3>
         <div class='flex-center flex-column'>
             <button class="level" onClick="questionChoice(this)">Easy</button>
@@ -55,7 +55,7 @@
     <!-- End Choose Level Section -->
 
     <!-- Start of Quiz Section -->
-    <section class="quiz-area" aria-labelledby="quiz-questions">
+    <section class="quiz-area">
         <div class="flex-center flex-column">
             <!-- Question Counter & Progress Bar -->
             <div id="question-counter">
@@ -67,20 +67,24 @@
                 </div>
             </div>
             <!-- Question -->
-            <h3 id="question-block"></h3>
+            <h3 id="question-block">Question</h3>
             <!-- Radio button choices -->
             <form id="quiz-choice" name="radioAnswers">
                 <div class="column-left">
-                    <input type="radio" name="choice" id="option0"><label id="label0" for="option0"></label></input>
-                    <input type="radio" name="choice" id="option1"><label id="label1" for="option1"></label></input>
+                    <input type="radio" name="choice" id="option0">
+                    <label id="label0" for="option0"></label>
+                    <input type="radio" name="choice" id="option1">
+                    <label id="label1" for="option1"></label>
                 </div>
                 <div class="column-right">
-                    <input type="radio" name="choice" id="option2"><label id="label2" for="option2"></label></input>
-                    <input type="radio" name="choice" id="option3"><label id="label3" for="option3"></label></input>
+                    <input type="radio" name="choice" id="option2">
+                    <label id="label2" for="option2"></label>
+                    <input type="radio" name="choice" id="option3">
+                    <label id="label3" for="option3"></label>
                 </div>
             </form>
             <!-- Next Question -->
-            <input type="button" value="next" id="next"></input>
+            <input type="button" value="next" id="next">
             <!-- Scoring Area -->
             <div class="score-area">
                 <span class="correct"><i class="fa-solid fa-check"></i> : <span id="correct-counter">0</span></span>
