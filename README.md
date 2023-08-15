@@ -227,17 +227,124 @@ Lato is the font used. It is a versatile and modern font that can be a suitable 
 
 ## Features
 
-### Welcome Section
+### Home Page
+
+<details>
+<summary>Screenshot of Home page on Desktop</summary>
+<img src="docs/home.png" width="700">
+</details>
+
+<details>
+<summary>Screenshot of Home page on mobile</summary>
+<img src="docs/mobile_home.png">
+</details>
+
+- Features two buttons. User can click the 'Play' button to get started or click 'High Scores' to view the Leaderboard section.
+
+### Username form section & Rules
+
+<details>
+<summary>Screenshot of form section on Desktop</summary>
+<img src="docs/form_section.png" width="700">
+</details>
+
+<details>
+<summary>Screenshot of form section on mobile</summary>
+<img src="docs/mobile_form_section.png">
+</details>
+
+- Features a user input field that lets the user input their name. The form has validations for the username field. The rules of the game are displayed in a box below the form.
 
 ### Choose difficulty level section
 
+<details>
+<summary>Screenshot of difficulty levels on Desktop</summary>
+<img src="docs/diff_levels.png" width="700">
+</details>
+
+<details>
+<summary>Screenshot of difficulty levels on mobile</summary>
+<img src="docs/mobile_diff_levels.png">
+</details>
+
+- Features 3 difficulty levels (Easy, Medium & Hard) to choose from.
+
 ### Quiz section
+
+<details>
+<summary>Screenshot of Quiz Section on Desktop</summary>
+<img src="docs/quiz_section.png" width="700">
+</details>
+
+<details>
+<summary>Screenshot of Quiz Section on mobile</summary>
+<img src="docs/mobile_quiz_section.png">
+</details>
+
+- Features 10 questions to answer based on the chosen level of difficulty. A score area below the quiz answer choices keeps track of the score. A progress bar is displayed above the question that helps keep track of the questions left. A question counter is also shown to let the user know the question number they are currently solving. Once the user selects the answer choice, the other choices are disabled/greyed out. The user is prompted with an action button - "Next" to move onto the next question.
 
 ### End of Quiz page
 
+<details>
+<summary>Screenshot of End Quiz page on Desktop</summary>
+<img src="docs/end_of_quiz.png" width="700">
+</details>
+
+<details>
+<summary>Screenshot of End Quiz page on mobile</summary>
+<img src="docs/mobile_end_quiz.png">
+</details>
+
+- Features user's performance with the total score achieved and level at which the game was played with a celebratory message and an image based on score. The user can choose to play the game again by clicking on the 'Retake quiz' button. The user can also to choose to save their score by clicking on 'Save' button.
+
+### Leaderboard
+
+<details>
+<summary>Screenshot of Leaderboard on Desktop</summary>
+<img src="docs/highscores.png" width="700">
+</details>
+
+<details>
+<summary>Screenshot of Leaderboard on mobile</summary>
+<img src="docs/mobile_leaderboard.png">
+</details>
+
+- displays the top 5 high scores of the quiz.
+
+### 404 Page
+
+<details>
+<summary>Screenshot of 404 page on Desktop</summary>
+<img src="docs/404.png" width="700">
+</details>
+
+<details>
+<summary>Screenshot of 404 page on mobile</summary>
+<img src="docs/mobile_404.png">
+</details>
+
+- displays the top 5 high scores of the quiz.
+
 ### Footer
 
+<details>
+<summary>Screenshot of Footer on Desktop</summary>
+<img src="docs/footer.png" width="500">
+</details>
+<details>
+<summary>Screenshot of footer on mobile</summary>
+<img src="docs/mobile_footer.png">
+</details>
+
+- Featured on all pages (also the 404 page).
+- Includes links to the LinkedIn and GitHub page of the developer.
+- All links open in a new window.
+
 ### Future Additions
+
+- Timer on each question.
+- Audio effects when navigating the quiz
+- Displaying the right answer to the user using colors. (ex. green background for the correct answer, red background for the incorrect answer)
 
 ## Technologies Used
 
@@ -474,8 +581,6 @@ After running the website through [Chrome Dev Tools](https://developer.chrome.co
 <summary>404 Page</summary>
 <img src="docs/lighthouse_desktop_404_1.png" width="700">
 </details>
-
-
 
 ## Deployment & Development
 
