@@ -367,6 +367,13 @@ After putting the website through [HTML Validation](https://validator.w3.org/), 
 <img src="docs/404_html_validation_error.png" width="700">
 </details>
 
+### CSS Validation
+
+After running the website through [W3C CSS Validator](https://jigsaw.w3.org/css-validator/), I was presented with the following warnings:<br /><br />
+
+![CSS Validation Error](docs/css_warnings.png)
+
+The css styles were removed and then validated once again with no warnings<br /><br />
 
 ### Lighthouse Testing
 
