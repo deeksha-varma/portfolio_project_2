@@ -273,7 +273,7 @@ Lato is the font used. It is a versatile and modern font that can be a suitable 
 
 <details>
 <summary>Screenshot of Quiz Section on Desktop</summary>
-<img src="docs/quiz_section.png" width="700">
+<img src="docs/desktop_quiz_section.png" width="700">
 </details>
 
 <details>
@@ -638,6 +638,7 @@ The method from cloning a project from GitHub is below:
 * [This](https://www.youtube.com/watch?v=ZGpi1iZ1oZo&t=482s) video was referred to for the radio button quiz layout.
 * Progress bar layout was implemented using [this](https://www.youtube.com/watch?v=f4fB9Xg2JEY) video by [Brian Design](https://www.youtube.com/@briandesign).
 * The disabled radio button functionality was implemented by referring to [this](https://stackoverflow.com/questions/62301953/how-to-disable-other-opitons-when-one-option-is-selected-of-radio-buttons) Stackoverflow question.
+* The two column layout of radio buttons was implemented using [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive) and this [CodePen](https://codepen.io/MattWindle/pen/perZRG).
 
 ## Acknowledgements
 The site was developed as a part of a Full Stack Software Development Diploma Course at the [Code Institute](https://codeinstitute.net/) and is my second Portfolio Project.
