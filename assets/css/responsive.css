@@ -40,14 +40,15 @@
         margin: 3px;
     }
 
-    form label {
+    .username-form label {
         padding: 0;
         margin: 0;
     }
 
-    form .btn {
+    .username-form .btn {
         margin: 0;
     }
+
     #usernameError {
         font-size: 1rem;
     }
@@ -77,10 +78,10 @@
         padding: 5px 20px;
     }
 
-    form label {
+    .username-form label {
         font-size: 1.1rem;
     }
-    form input {
+    .username-form input {
         width: 80%;
     }
 
@@ -95,6 +96,54 @@
 
 @media screen and (max-width: 375px) {
     .level {
+        width: 80%;
+    }
+}
+
+/* Quiz Section */
+
+/* For mobile devices */
+
+@media screen and (max-width: 750px) {
+    #progressBar {
+        width: 10rem;
+    }
+
+    #question-block {
+        margin: 0.8rem;
+    }
+
+    .radioContainer {
+        width: 80%;
+    }
+
+    #next {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #progressBar {
+        width: 5rem;
+    }
+
+    #question-block {
+        margin: 0;
+    }
+
+    .radioContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column {
+        padding: 0;
+    }
+
+    #next {
+        margin: 1rem;
         width: 80%;
     }
 }

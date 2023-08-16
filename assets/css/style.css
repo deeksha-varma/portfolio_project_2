@@ -63,13 +63,13 @@ h1, h2, h3 {
     justify-content: center;
 }
 
-form label {
+.username-form label {
     padding: 0.5rem;
     margin: 0.3rem;
     font-size: 1.2rem;
 }
 
-form input {
+.username-form input {
     padding: 0.5rem;
     margin: 0.3rem;
     background-color: whitesmoke;
@@ -79,7 +79,7 @@ form input {
     width: 320px;
 }
 
-form .btn {
+.username-form .btn {
     margin: 1rem 15rem;
     width: 100px;
     height: 50px;
@@ -211,15 +211,28 @@ input.invalid {
     margin: 2rem;
 }
 
-#quiz-choice {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: center;
+#quiz-choice label {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    font-size: 1.2rem;
 }
 
-#quiz-choice input {
-    width: 100px;
+.radioContainer {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-column-gap: 20px;
+}
+
+/* Code referenced from W3Schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.box{
+    display: flex;
 }
 
 /* style disabled radio buttons */
@@ -232,23 +245,7 @@ input[type="radio"][disabled] {
     border-color: rgba(185, 182, 182, 0.5);
 }
 
-.column-left {
-    display: flex;
-    align-items: center;
-}
-
-.column-left label {
-    width: 100px;
-}
-
-.column-right label {
-    width: 100px;
-}
-
-.column-right {
-    display: flex;
-    align-items: center;
-}
+/* Next question button styling */
 
 #next {
     width: 250px;
@@ -285,6 +282,7 @@ input[type="radio"][disabled] {
 }
 
 /* Score Area Styling */
+/* Styles referenced from LoveMaths project */
 
 .score-area {
     padding: 0.5rem;

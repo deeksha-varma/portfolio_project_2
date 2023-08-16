@@ -22,7 +22,7 @@
     <!-- Start of Username form Section -->
     <div class="form-area">
         <h3>Please enter a username to start playing!</h3>
-        <form>
+        <form class="username-form">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br>
             <span role="alert" id="usernameError" aria-hidden="true"></span>
@@ -72,17 +72,27 @@
             <h3 id="question-block">Question</h3>
             <!-- Radio button choices -->
             <form id="quiz-choice" name="radioAnswers">
-                <div class="column-left">
-                    <input type="radio" name="choice" id="option0">
-                    <label id="label0" for="option0"></label>
-                    <input type="radio" name="choice" id="option1">
-                    <label id="label1" for="option1"></label>
-                </div>
-                <div class="column-right">
-                    <input type="radio" name="choice" id="option2">
-                    <label id="label2" for="option2"></label>
-                    <input type="radio" name="choice" id="option3">
-                    <label id="label3" for="option3"></label>
+                <div class="radioContainer">
+                    <div class="column">
+                        <div class="box">
+                            <input type="radio" name="choice" id="option0">
+                            <label id="label0" for="option0"></label>
+                        </div>
+                        <div class="box">
+                            <input type="radio" name="choice" id="option1">
+                            <label id="label1" for="option1"></label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="box">
+                            <input type="radio" name="choice" id="option2">
+                            <label id="label2" for="option2"></label>
+                        </div>
+                        <div class="box">
+                            <input type="radio" name="choice" id="option3">
+                            <label id="label3" for="option3"></label>
+                        </div>
+                    </div>
                 </div>
             </form>
             <!-- Next Question -->
