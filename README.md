@@ -402,7 +402,37 @@ Lato is the font used. It is a versatile and modern font that can be a suitable 
 ![CSS Validation](docs/css_validation_image.png)
 
 ### JavaScript Validation
-The linter [JSHint](https://jshint.com/) was used to validate the JavaScript files.
+The linter [JSHint](https://jshint.com/) was used to validate the JavaScript files. Small issues, such as missing semicolons, etc. were fixed. Unused variable warnings were ignored, as those variables or functions where called/used in either the html files or other JS files. All remaining warnings stem from the JShint configuration and are not related to the code.
+
+<details>
+<summary>script.js validation part one</summary>
+<img src="docs/jshintscripttop.png" width="700">
+</details>
+
+<details>
+<summary>script.js validation part two</summary>
+<img src="docs/jshintscriptbottom.png" width="700">
+</details>
+
+<details>
+<summary>end.js validation</summary>
+<img src="docs/jshintend.png" width="700">
+</details>
+
+<details>
+<summary>highscores.js validation</summary>
+<img src="docs/jshinthighscores.png" width="700">
+</details>
+
+<details>
+<summary>questions.js validation</summary>
+<img src="docs/jshintquestionstop.png" width="700">
+</details>
+
+<details>
+<summary>questions.js validation</summary>
+<img src="docs/jshintquestionsbottom.png" width="700">
+</details>
 
 ## Accessibility & Performance
 
@@ -516,66 +546,27 @@ The css styles were removed and then validated once again with no warnings<br />
 
 ### Lighthouse Testing
 
-After running the website through [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) Lighthouse Testing, I was presented with the following SEO score for index page:<br /><br />
-
-<details>
-<summary>Home Page</summary>
-<img src="docs/lighthouse_desktop_index.png" width="700">
-</details>
-
-* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the score then improved.
+After running the website through [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) Lighthouse Testing, I was presented with low SEO score for all pages. A meta description attribute was added inside the head element for all the pages as a fix, the score then improved.<br /><br />
 
 <details>
 <summary>Home Page</summary>
 <img src="docs/lighthouse_desktop_index_1.png" width="700">
 </details>
 
-<br />
-<details>
-<summary>Game Page</summary>
-<img src="docs/lighthouse_desktop_game.png" width="700">
-</details>
-
-* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the score then improved.
-
 <details>
 <summary>Game Page</summary>
 <img src="docs/lighthouse_desktop_game_1.png" width="700">
 </details>
-
-<br />
-<details>
-<summary>End of Quiz Page</summary>
-<img src="docs/lighthouse_desktop_end_quiz.png" width="700">
-</details>
-
-* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the score then improved.
 
 <details>
 <summary>End of Quiz Page</summary>
 <img src="docs/lighthouse_desktop_end_quiz_1.png" width="700">
 </details>
 
-<br />
-<details>
-<summary>Leaderboard</summary>
-<img src="docs/lighthouse_desktop_leaderboard.png" width="700">
-</details>
-
-* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the SEO score then improved.
-
 <details>
 <summary>Leaderboard</summary>
 <img src="docs/lighthouse_desktop_leaderboard_1.png" width="700">
 </details>
-
-<br />
-<details>
-<summary>404 Page</summary>
-<img src="docs/lighthouse_desktop_404.png" width="700">
-</details>
-
-* The code was fixed to include a meta description attribute inside the head element. After implementing these changes, the SEO score then improved.
 
 <details>
 <summary>404 Page</summary>
@@ -632,13 +623,10 @@ The method from cloning a project from GitHub is below:
 ### Code
 
 * The functionality for keeping track of the score was inspired by the Love Maths project.
-* Form validation for username field was implemented using this [FreeCodeCamp](https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/) and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation) resource.
 * Username Submit button styling inspired from [CSS Submit Buttons](https://codepen.io/sumeet1610/pen/abJeZXq).
 * The CSS styles for 'choose level' section was taken from [CSS Button Examples](https://getcssscan.com/css-buttons-examples).
-* [This](https://www.youtube.com/watch?v=ZGpi1iZ1oZo&t=482s) video was referred to for the radio button quiz layout.
 * Progress bar layout was implemented using [this](https://www.youtube.com/watch?v=f4fB9Xg2JEY) video by [Brian Design](https://www.youtube.com/@briandesign).
 * The disabled radio button functionality was implemented by referring to [this](https://stackoverflow.com/questions/62301953/how-to-disable-other-opitons-when-one-option-is-selected-of-radio-buttons) Stackoverflow question.
-* The two column layout of radio buttons was implemented using [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive) and this [CodePen](https://codepen.io/MattWindle/pen/perZRG).
 
 ## Acknowledgements
 The site was developed as a part of a Full Stack Software Development Diploma Course at the [Code Institute](https://codeinstitute.net/) and is my second Portfolio Project.
