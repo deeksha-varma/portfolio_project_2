@@ -129,6 +129,7 @@
 
     #question-block {
         margin: 0;
+        font-size: 0.8rem;
     }
 
     .radioContainer {
@@ -145,6 +146,10 @@
     #next {
         margin: 1rem;
         width: 80%;
+    }
+
+    #quiz-choice label {
+        font-size: 0.7rem;
     }
 }
 
