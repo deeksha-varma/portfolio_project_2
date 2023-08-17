@@ -33,9 +33,8 @@ function validate(e) {
     }
 }
 
-var allQuestions;
+let allQuestions;
 let score = 0;
-var current = 0;
 const progressText = document.querySelector("#progressText");
 const progressBarFull = document.querySelector("#progressBarFull");
 let questionCounter = 0;
@@ -54,7 +53,7 @@ function setAvailableQuestions() {
 
 function createQuestion() {
     // deselect answers
-    for (let i = 0; i < allQuestions[this.current].answers.length; i++) {
+    for (let i = 0; i < allQuestions[0].answers.length; i++) {
         document.forms.radioAnswers.elements.choice[i].checked = false;
     }
     // generate a random question
@@ -80,6 +79,8 @@ function loadQuestion() {
     availableQuestions.splice(randomIndex, 1);
     // incrementing question counter
     questionCounter++;
+    // disable the next question btn on load to validate user input
+    next.disabled = true;
 }
 
 /**
@@ -120,12 +121,14 @@ function createChoices() {
 function disableRadioOptions() {
     radioInputs.forEach(function (el) {
         el.addEventListener('click', function () {
-          //getting name attribute of radio button which is clicked
-          var name = el.getAttribute('name');
-          //loop only through those radio button options where name is same and disable them
-          document.querySelectorAll('input[name="' + name + '"]').forEach(function (el) {
+            // enable the next question btn on radio click
+            next.disabled = false;
+            //getting name attribute of radio button which is clicked
+            var name = el.getAttribute('name');
+            //loop only through those radio button options where name is same and disable them
+            document.querySelectorAll('input[name="' + name + '"]').forEach(function (el) {
             if (el.matches(":not(:checked)")) {
-              el.setAttribute('disabled', 'disabled');
+                el.setAttribute('disabled', 'disabled');
             }
           });
         });
@@ -141,8 +144,15 @@ function resetRadioOptions() {
     });
 }
 
-function getSelectedChoice(element) {
-    const value = parseInt(element.value);
+/**
+ *
+ * @param {element} userinput
+ * This function is used to evaluate the user selected radio input
+ * and increment/decrement score based on the right answer.
+ */
+
+function getSelectedChoice(userinput) {
+    const value = parseInt(userinput.value);
     if (value === currentQuestion.correct) {
         score++;
         incrementScore();

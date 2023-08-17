@@ -112,9 +112,6 @@ h1, h2, h3 {
     display: block;
 }
 
-/* code referenced from https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation */
-/* This is our style for the invalid fields */
-
 input.invalid {
     border-color: #900;
     background-color: #fdd;
@@ -214,7 +211,8 @@ input.invalid {
 #quiz-choice label {
     padding: 0.5rem;
     margin: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: #e5e7eb;
 }
 
 .radioContainer {
@@ -223,8 +221,6 @@ input.invalid {
     grid-column-gap: 20px;
 }
 
-/* Code referenced from W3Schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive
-/* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
@@ -279,6 +275,11 @@ input[type="radio"][disabled] {
 
 #next:focus {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
+}
+
+#next:disabled {
+    color: #575454;
+    opacity: 0.4;
 }
 
 /* Score Area Styling */
