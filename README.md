@@ -309,7 +309,8 @@ Lato is the font used. It is a versatile and modern font that can be a suitable 
 <img src="docs/mobile_leaderboard.png">
 </details>
 
-- displays the top 5 high scores of the quiz.
+- Shows the player the current top 5 high scores of the quiz.
+- All scores are saved in local storage so players can only compete with anyone who attempts the quiz on the same machine.
 
 ### 404 Page
 
@@ -494,29 +495,63 @@ The websites compatability was tested on the following browsers and no issues we
 ## Manual Testing
 * In addition to the above tests, I have performed manual testing using the following use cases tabulated below to make sure everything works as intended.
 
-    1. Welcome section
+    1. Welcome section/Home Page
 
         | **Feature** | **Action** | **Expected Result** | **Actual Result** |
         |-------------|------------|---------------------|-------------------|
-        | Welcome Section | Input a username and submit | The choose a level section displays |  |
+        | Home | Click on 'Play' button | Should display the username form section and Rules | Works as expected |
+        | Home | Click on 'High Scores' button | Should open the leaderboard page | Works as expected |
+        | Home | Click on footer links | Should open the corresponding links in a new tab | Works as expected |
 
-    2. Choose A Level Section
-
-        | **Feature** | **Action** | **Expected Result** | **Actual Result** |
-        |-------------|------------|---------------------|-------------------|
-        | Choose A Level Section | Click on the choosen level | The game starts  |  |
-
-    3. Quiz Section
+    2. Username Form Section and Rules
 
         | **Feature** | **Action** | **Expected Result** | **Actual Result** |
         |-------------|------------|---------------------|-------------------|
-        | Quiz Section | Click through the answers | New questions are continuously displayed |  |
+        | Username Section | Click on 'Submit' button without entering any username | Should not submit the form and display this message to the user - 'Please fill in a username to proceed!' | Works as expected |
+        | Username Section | Enter a username in the input field and click 'Submit' | Should submit the form and display the choose level section with a welcome message containing the player name - Welcome to the Quiz, ${username}! | Works as expected |
 
-    3. End of Game Page
+    3. Choose Level Section
 
         | **Feature** | **Action** | **Expected Result** | **Actual Result** |
         |-------------|------------|---------------------|-------------------|
-        | End of Game Page | Choose to play again | Welcome page displays |  |
+        | Choose Level Section | Verify that there are three buttons on this page - Easy, Medium and Hard | Displays three level buttons | Works as expected |
+        | Choose Level Section | Click on 'Easy' button | it loads the easy questions in a random order | Works as expected |
+        | Choose Level Section | Click on 'Medium' button | it loads the medium difficulty questions in a random order | Works as expected |
+        | Choose Level Section | Click on 'Hard" button | it loads the hard questions in a random order | Works as expected |
+        | Choose Level Section | Verify the welcome message | it should display the message - "Welcome to the Quiz, username" | Works as expected |
+
+    4. Quiz Section
+
+        | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+        |-------------|------------|---------------------|-------------------|
+        | Quiz Section | Click on 'Next' question without selecting a radio answer | Next button should be disabled/greyed out and should not display next question unless an answer is selected | Works as expected |
+        | Quiz Section | Click on an answer | Should disable other radio answer options and grey them out | Works as expected |
+        | Quiz Section | Click on an answer | Should increment or decrement correct/wrong answer scores displayed below the answers | Works as expected |
+        | Quiz Section | Click on 'Next' button after selecting a radio answer | Should make the next question button clickable and display next question. Also increment question counter and progress bar displayed on top of the question. | Works as expected |
+
+    5. End of Quiz Page
+
+        | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+        |-------------|------------|---------------------|-------------------|
+        | End of Quiz Page | Click on 'Retake Quiz' button | Should redirect user to home page | Works as expected |
+        | End of Quiz Page | Click on 'Save' button | Should redirect user to Leaderboard page and display the user's score along with the top 5 scores | Works as expected |
+
+    6. Leaderboard/High Scores Page
+        | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+        |-------------|------------|---------------------|-------------------|
+        | Leaderboard | Click on 'Go Home' button | Should redirect user to home page | Works as expected |
+        | Leaderboard | Check if user's saved score is displayed | Should display the user's score below the top 5 scores in a different font color | Works as expected |
+
+    7. 404 Page
+        | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+        |-------------|------------|---------------------|-------------------|
+        | 404 Page | On the browser url tab try to search for a mistyped resource - ex. https://deeksha-varma.github.io/portfolio_project_2/hello | Should redirect user to 404 page | Works as expected |
+        | 404 Page | Click on 'Play' button | Should redirect user to Home Page | Works as expected |
+
+    8. Footer
+        | **Feature** | **Action** | **Expected Result** | **Actual Result** |
+        |-------------|------------|---------------------|-------------------|
+        | Footer | Click on footer links on all pages | Should open the corresponding Github and Linkedin link of the developer | Works as expected |
 
 ## Bugs, Fixes and Outstanding issues
 
