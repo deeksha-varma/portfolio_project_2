@@ -14,7 +14,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 // make some HTML to display the results of the quiz
 finalScore.innerHTML = `<h2>Your Score: ${mostRecentScore}/${total}</h2>`;
 difficultyLevel.innerHTML = `<h2>Level: ${userLevel}</h2>`;
-quizPlayer.innerHTML = `<h3>Thank you ${user} for completing the quiz!</h3>`;
+quizPlayer.innerHTML = `<h2>Thank you ${user} for completing the quiz!</h2>`;
 
 /**
  * This function is used to display custom messages with score, level info and
@@ -97,8 +97,7 @@ function saveHighScore(e) {
 
     const score = {
         score: mostRecentScore,
-        name: user,
-        level: userLevel
+        name: user
     };
 
     highScores.push(score);
@@ -110,7 +109,7 @@ function saveHighScore(e) {
     highScores.splice(5);
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    window.location.assign("./index.html");
+    window.location.assign("./highscores.html");
 }
 
 displayCustomResult();
