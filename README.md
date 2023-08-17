@@ -412,12 +412,22 @@ The linter [JSHint](https://jshint.com/) was used to validate the JavaScript fil
 
 <details>
 <summary>script.js validation part two</summary>
-<img src="docs/jshintscriptbottom.png" width="700">
+<img src="docs/jshintscriptbottom_1.png" width="700">
 </details>
 
 <details>
-<summary>end.js validation</summary>
-<img src="docs/jshintend.png" width="700">
+<summary>script.js validation part three</summary>
+<img src="docs/jshintscriptbottom_2.png" width="700">
+</details>
+
+<details>
+<summary>end.js validation part one</summary>
+<img src="docs/jshintendtop.png" width="700">
+</details>
+
+<details>
+<summary>end.js validation part two</summary>
+<img src="docs/jshintendbottom.png" width="700">
 </details>
 
 <details>
@@ -490,7 +500,6 @@ The websites compatability was tested on the following browsers and no issues we
 * Google Chrome
 * Mozilla Firefox
 * Microsoft Edge
-* Safari
 
 ## Manual Testing
 * In addition to the above tests, I have performed manual testing using the following use cases tabulated below to make sure everything works as intended.
@@ -607,6 +616,31 @@ After running the website through [Chrome Dev Tools](https://developer.chrome.co
 <summary>404 Page</summary>
 <img src="docs/lighthouse_desktop_404_1.png" width="700">
 </details>
+
+#### Room for improvement on User Stories
+
+The leaderboard feature currently displays the top 5 scores from localStorage. In future, enhancenments such as having scores displayed based on each difficulty level can be implemented.
+
+## Bugs & Fixes
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| Some of the links on different pages were broken | On adding relative paths, this was fixed. Fixed in [this](https://github.com/deeksha-varma/portfolio_project_2/commit/b697e9c3e81bf46d260dbb7907c93c5a57755d36) and [this](https://github.com/deeksha-varma/portfolio_project_2/commit/bc899d1b16e14a290569c753a64ecdb9dc431fd8) commit |
+| 404 error failed resource was showing on loading banner image and favicon | Fixed by adding relative path to background_image url and favicon added to link tag inside head element of the pages. Fixed in [this](https://github.com/deeksha-varma/portfolio_project_2/commit/9af40bc033388e83d157ced23eda4ca42a808d71) commit |
+| Missing semicolon jshint warnings from js files | Fixed in [this](https://github.com/deeksha-varma/portfolio_project_2/commit/b95315c76667591815e9615fe1cbc16287529f6e) commit |
+| User can move on to next question without selecting any answer on the quiz page | This has been fixed by disabling the next question button on the quiz page so that the user is prompted to select an answer to proceed to the next question. This has been implemented in [this](https://github.com/deeksha-varma/portfolio_project_2/commit/7012590690a2e2c2ab18ccd86fa5339f1525b1f2) commit |
+| Responsiveness of the end quiz page on mobile screen widths was breaking | Media queries were added to handle font sizes of the question and reduce margin. This has been fixed in multiple commits. [Fix#1](https://github.com/deeksha-varma/portfolio_project_2/commit/9b59e4bf5be2f62e51900144da196e38e92b3c30), [Fix#2](https://github.com/deeksha-varma/portfolio_project_2/commit/e6b573950c21feaceb192392e17ec9fa7f890e5f) |
+
+## Bugs Unresolved
+
+### 'interest-cohort'
+
+* When inspecting the website with [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/), the website is showing 1 warning when I refresh the deployed project. <br /><br />
+
+![Interest Cohort](docs/interest_cohort_warning.png)
+
+* Upon browsing the internet, I found this post on [StackOverflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort) which explains that "***GitHub hosted pages disable FLoC, which is Google's 3rd party cookie alternative. GitHub, Microsoft, doesn't seems to like it.*** There is also a link to an official GitHub blog about it [here](https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/).
+
 
 ## Deployment & Development
 
